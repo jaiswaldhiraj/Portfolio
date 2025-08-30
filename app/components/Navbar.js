@@ -14,17 +14,19 @@ const Navbar = () => {
 
         <div id="nav_logo" className='ml-8 text-2xl'>Dhiraj's Portfolio</div>
 
-        <div id="nav_links" className='text-l'>
+        <div id="nav_links" className='text-2xl'>
           <button
-            className="text-white md:hidden mr-10"
+            className="text-white md:hidden mr-6"
             onClick={() => setOpen(!open)}
           >
             ☰
           </button>
 
           <ul
-            className={`${open ? "block" : "hidden"
-              } md:m-0 md:p-0 md:flex md:space-x-6 gap-8 text-xl mt-31`}
+            className={`absolute top-16 md:mr-8 right-0 bg-black w-40 md:w-auto text-white text-xl 
+            transition-all duration-500 ease-in-out overflow-hidden z-50
+            ${open ? 'translate-x-0 max-h-[300px] p-4' : 'translate-x-full max-h-0'}
+            md:static md:flex md:space-x-6 md:translate-x-0 md:max-h-none md:p-0`}
           >
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
