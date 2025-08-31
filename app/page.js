@@ -14,6 +14,9 @@ export default function Home() {
         typeSpeed: 60,
         backSpeed: 40,
         loop: true,
+        showCursor: true,
+        cursorChar: "|",
+
       });
 
       return () => {
@@ -26,9 +29,11 @@ export default function Home() {
     <section id="firstsection" className="m-10 mt-32 flex justify-center items-center ">
       {/* Text Section */}
       <div id="textsection" className="text-4xl justify-center w-96">
-        <div>Hello, I Am</div>
-        <div className="text-orange-700">Dhiraj Jaiswal</div>
-        <div>
+        <div className="text-lg text-gray-600">Hello, I Am</div>
+        <div className="text-5xl font-extrabold text-orange-700">
+          Dhiraj Jaiswal
+        </div>
+        <div className="mt-2 text-2xl font-medium">
           <span ref={typedRef}></span>
         </div>
       </div>
@@ -40,7 +45,6 @@ export default function Home() {
           alt="My Photo"
           width={600}
           height={600}
-          className=""
         />
       </div>
     </section>
