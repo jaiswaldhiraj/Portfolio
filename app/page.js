@@ -35,7 +35,7 @@ export default function Home() {
         <div className="text-5xl font-extrabold text-orange-700">
           Dhiraj Jaiswal
         </div>
-        <div className="mt-2 text-2xl font-medium bg-gradient-to-r from-orange-600 to-yellow-300 bg-clip-text text-transparent">
+        <div className="mt-2 text-2xl font-medium bg-gradient-to-r from-orange-700 to-yellow-200 bg-clip-text text-transparent">
           <span ref={typedRef}></span>
         </div>
 

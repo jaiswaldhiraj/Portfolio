@@ -34,14 +34,24 @@ const Navbar = () => {
           md:static md:flex md:space-x-6 md:opacity-100 md:max-h-none md:p-0 md:mr-12 md:gap-12`}
         >
           <li className="m-2" onClick={handleClose}>
-            <Link href="/" className={pathname === "/" ? "text-blue-400" : ""}>
+            <Link href="/"
+              className={`
+              relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
+              after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
+              ${pathname === "/" ? "text-blue-400 after:w-full" : "text-white"}
+            `}
+            >
               Home
             </Link>
           </li>
           <li className="m-2" onClick={handleClose}>
             <Link
               href="/about"
-              className={pathname === "/about" ? "text-blue-400" : ""}
+              className={`
+              relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
+              after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
+              ${pathname === "/about" ? "text-blue-400 after:w-full" : "text-white"}
+            `}
             >
               About
             </Link>
@@ -49,7 +59,11 @@ const Navbar = () => {
           <li className="m-2" onClick={handleClose}>
             <Link
               href="/contact"
-              className={pathname === "/contact" ? "text-blue-400" : ""}
+              className={`
+              relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
+              after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
+              ${pathname === "/contact" ? "text-blue-400 after:w-full" : "text-white"}
+            `}
             >
               Contact
             </Link>
