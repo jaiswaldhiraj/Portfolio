@@ -31,7 +31,7 @@ const Navbar = () => {
           className={`absolute top-16 right-0 bg-black w-40 md:w-auto text-white text-xl 
           transition-all duration-500 ease-in-out overflow-hidden z-50
           ${open ? "max-h-[300px] opacity-100 p-4" : "max-h-0 opacity-0"}
-          md:static md:flex md:space-x-6 md:opacity-100 md:max-h-none md:p-0`}
+          md:static md:flex md:space-x-6 md:opacity-100 md:max-h-none md:p-0 md:mr-12 md:gap-12`}
         >
           <li className="m-2" onClick={handleClose}>
             <Link href="/" className={pathname === "/" ? "text-blue-400" : ""}>

@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <>
-    <div className="mt-20">Home</div>
+    <div className="m-15">Home</div>
     
     </>
   );
