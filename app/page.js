@@ -5,7 +5,7 @@ import Image from "next/image";
 import Typed from "typed.js";
 
 export default function Home() {
-  const typedRef = useRef(null); // ✅ no <HTMLSpanElement>
+  const typedRef = useRef(null);
 
   useEffect(() => {
     if (typedRef.current) {
@@ -16,7 +16,6 @@ export default function Home() {
         loop: true,
         showCursor: true,
         cursorChar: "|",
-
       });
 
       return () => {
@@ -26,16 +25,20 @@ export default function Home() {
   }, []);
 
   return (
-    <section id="firstsection" className="m-10 mt-32 flex justify-center items-center ">
+    <section
+      id="firstsection"
+      className="m-10 mt-32 flex flex-col md:flex-row justify-center items-center gap-12"
+    >
       {/* Text Section */}
-      <div id="textsection" className="text-4xl justify-center w-96">
+      <div id="textsection" className="w-96 text-center md:text-left">
         <div className="text-lg text-gray-600">Hello, I Am</div>
         <div className="text-5xl font-extrabold text-orange-700">
           Dhiraj Jaiswal
         </div>
-        <div className="mt-2 text-2xl font-medium">
+        <div className="mt-2 text-2xl font-medium bg-gradient-to-r from-orange-600 to-yellow-300 bg-clip-text text-transparent">
           <span ref={typedRef}></span>
         </div>
+
       </div>
 
       {/* Image Section */}
