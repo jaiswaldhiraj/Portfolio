@@ -77,12 +77,12 @@ export default function Home() {
         </motion.div>
       </section>
 
-      
+
 
       {/* Divider */}
-      <div className="border-t border-gray-300 my-16 w-3/4 mx-auto"></div>
+      <div className="border-t border-gray-300 my-16 w-6/7 mx-auto"></div>
 
-
+      <h1 className="text-6xl font-bold text-orange-700 md:ml-40 ml-8 ">My Projects</h1>
 
 
 
@@ -97,18 +97,23 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {/* Image */}
-          <div className="md:w-1/2">
-            <Image
-              src="/milap.svg"
-              alt="Milap App"
-              width={300}
-              height={200}
-              className="rounded-2xl shadow-lg border-2 justify-center"
-            />
-          </div>
+<div className="md:w-1/2 relative flex justify-center items-center p-6 rounded-2xl overflow-hidden">
+  {/* Background image with transparency */}
+  <div className="absolute inset-0 bg-[url('/milap-bg.png')] bg-cover bg-center opacity-95"></div>
+
+  {/* Foreground content */}
+  <Image
+    src="/milap.svg"
+    alt="Milap App"
+    width={450}
+    height={350}
+    className="relative z-10"
+  />
+</div>
+
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl font-bold text-orange-700">Milap</h2>
+            <h2 className="text-5xl font-bold text-orange-700">Milap - ( Dating App )</h2>
             <p className="mt-4 text-gray-600">
               A modern dating app with swipe cards, real-time chat, and
               Firebase-powered matchmaking.
@@ -130,18 +135,18 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {/* Image */}
-          <div className=" md:w-1/2">
+          <div className="md:w-1/2">
             <Image
               src="/portfolio.png"
               alt="Portfolio Website"
-              width={400}
-              height={200}
+              width={600}
+              height={400}
               className="rounded-2xl shadow-lg"
             />
           </div>
           {/* Text */}
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl font-bold text-orange-700">
+            <h2 className="text-5xl font-bold text-orange-700">
               Portfolio Website
             </h2>
             <p className="mt-4 text-gray-600">
