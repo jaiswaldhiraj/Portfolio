@@ -11,7 +11,11 @@ export default function Home() {
   useEffect(() => {
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, {
-        strings: ["Application Developer", "Web Developer ", "Tech Enthusiast 🚀"],
+        strings: [
+          "Application Developer",
+          "Web Developer ",
+          "Tech Enthusiast 🚀",
+        ],
         typeSpeed: 60,
         backSpeed: 40,
         loop: true,
@@ -27,6 +31,7 @@ export default function Home() {
 
   return (
     <>
+      {/* ===== Hero Section ===== */}
       <section
         id="firstsection"
         className="m-10 mt-32 flex flex-col md:flex-row justify-center items-center gap-12"
@@ -68,23 +73,87 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <Image
-            src="/developer.png"
-            alt="My Photo"
-            width={600}
-            height={600}
-          />
+          <Image src="/developer.png" alt="My Photo" width={600} height={600} />
         </motion.div>
       </section>
 
+      {/* Divider */}
       <div className="border-t border-gray-300 my-16 w-3/4 mx-auto"></div>
 
-      <section id="secondsection">
+      {/* ===== Projects Section ===== */}
+      <section id="projects" className="m-10 mt-32 flex flex-col justify-center items-center gap-12">
+        {/* Project 1 - Milap */}
+        <motion.div
+          className="flex flex-col md:flex-row items-center gap-12"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          {/* Image */}
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/milap.svg"
+              alt="Milap App"
+              width={300}
+              height={200}
+              className="rounded-2xl shadow-lg border-2 justify-center"
+            />
+          </div>
+          {/* Text */}
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="text-3xl font-bold text-orange-700">Milap</h2>
+            <p className="mt-4 text-gray-600">
+              A modern dating app with swipe cards, real-time chat, and
+              Firebase-powered matchmaking.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+              <span className="px-3 py-1 bg-gray-200 rounded-lg text-black">Java</span>
+              <span className="px-3 py-1 bg-gray-200 rounded-lg text-black">Firebase</span>
+              <span className="px-3 py-1 bg-gray-200 rounded-lg text-black">Glide</span>
+            </div>
+          </div>
+        </motion.div>
 
-
-
+        {/* Project 2 - Portfolio Website */}
+        <motion.div
+          className="flex flex-col md:flex-row-reverse items-center gap-12"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          {/* Image */}
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/portfolio.png"
+              alt="Portfolio Website"
+              width={400}
+              height={200}
+              className="rounded-2xl shadow-lg"
+            />
+          </div>
+          {/* Text */}
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="text-3xl font-bold text-orange-700">
+              Portfolio Website
+            </h2>
+            <p className="mt-4 text-gray-600">
+              My personal portfolio built with Next.js and Tailwind CSS,
+              showcasing projects and skills.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+              <span className="px-3 py-1 bg-gray-200 rounded-lg text-black">Next.js</span>
+              <span className="px-3 py-1 bg-gray-200 rounded-lg text-black">
+                Tailwind CSS
+              </span>
+              <span className="px-3 py-1 bg-gray-200 rounded-lg text-black">
+                Framer Motion
+              </span>
+            </div>
+          </div>
+        </motion.div>
       </section>
-
     </>
   );
 }
