@@ -98,7 +98,7 @@ export default function Home() {
 
 
       {/* ===== Projects Section ===== */}
-      <section id="projects" className="m-10 mt-32 flex flex-col justify-center items-center gap-12">
+      <section id="projects" className="m-10 mt-22 mb-56 flex flex-col justify-center items-center gap-12">
         {/* Project 1 - Milap */}
         <motion.div
           className="flex flex-col md:flex-row items-center gap-12"
@@ -152,17 +152,17 @@ export default function Home() {
                 />
               </div>
 
-<Link
-  target="_blank"
-  rel="noopener noreferrer"
-  href="https://github.com/yourusername/milap"
-  className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
->
-  <FaGithub className="text-xl" />Git Repo
-</Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/yourusername/milap"
+                className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
+              >
+                <FaGithub className="text-xl" />Git Repo
+              </Link>
 
               <a
-                href="/about" // Replace with your GitHub repo link
+                href="/projects" // Replace with your GitHub repo link
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-700 transition border-2 border-white"
               >
@@ -225,18 +225,18 @@ export default function Home() {
               </div>
 
 
-<Link
-  target="_blank"
-  rel="noopener noreferrer"
-  href="https://github.com/yourusername/milap"
-  className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
->
-  <FaGithub className="text-xl" />Git Repo
-</Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/yourusername/milap"
+                className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
+              >
+                <FaGithub className="text-xl" />Git Repo
+              </Link>
 
 
               <a
-                href="/about" // Replace with your GitHub repo link
+                href="/projects" // Replace with your GitHub repo link
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-700 transition border-2 border-white"
               >
@@ -246,7 +246,7 @@ export default function Home() {
 
             </div>
           </div>
-        </motion.div>
+        </motion.div> 
       </section>
     </>
   );
