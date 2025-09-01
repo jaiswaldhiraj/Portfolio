@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Typed from "typed.js";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   const typedRef = useRef(null);
@@ -57,7 +59,7 @@ export default function Home() {
           <motion.a
             href="/resume.pdf"
             download
-            className="inline-block mt-6 px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-700 transition"
+            className="inline-block mt-6 px-6 py-3 bg-orange-600 text-xl text-white rounded-lg font-semibold hover:bg-orange-700 transition"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -106,7 +108,7 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {/* Image */}
-          <div className="md:w-1/2 relative flex justify-center items-center p-6 rounded-2xl overflow-hidden">
+          <div className="md:w-1/2 relative flex justify-center items-center p-6 rounded-2xl overflow-hidden shadow-lg transform hover:scale-95 transition duration-750">
             {/* Background image with transparency */}
             <div className="absolute inset-0 bg-[url('/milap-bg.png')] bg-cover bg-center opacity-95"></div>
 
@@ -150,6 +152,23 @@ export default function Home() {
                 />
               </div>
 
+<Link
+  target="_blank"
+  rel="noopener noreferrer"
+  href="https://github.com/yourusername/milap"
+  className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
+>
+  <FaGithub className="text-xl" />Git Repo
+</Link>
+
+              <a
+                href="/about" // Replace with your GitHub repo link
+                rel="noopener noreferrer"
+                className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-700 transition border-2 border-white"
+              >
+                Read More ➤
+              </a>
+
             </div>
           </div>
         </motion.div>
@@ -163,7 +182,8 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {/* Image */}
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750
+">
             <Image
               src="/portfolio.png"
               alt="Portfolio Website"
@@ -181,28 +201,48 @@ export default function Home() {
               My personal portfolio built with Next.js and Tailwind CSS,
               showcasing projects and skills.
             </p>
-              <p className="mt-2 text-gray-400 text-l">
-                Technologies used -
-              </p>
+            <p className="mt-2 text-gray-400 text-l">
+              Technologies used -
+            </p>
             <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
 
-              <div className=" flex justify-center items-center p-2 rounded-xl bg-white">
+              <div className=" flex justify-center items-center p-4 rounded-xl bg-white">
                 <Image
                   src="/nextjs.svg"
                   alt="Portfolio Website"
                   width={120}
-                  height={25}
+                  height={30}
                 />
               </div>
 
-              <div className=" flex justify-center items-center p-2 rounded-xl bg-white">
+              <div className=" flex justify-center items-center p-4 rounded-xl bg-white ">
                 <Image
                   src="/tailwindcss.svg"
                   alt="Portfolio Website"
                   width={120}
-                  height={25}
+                  height={30}
                 />
               </div>
+
+
+<Link
+  target="_blank"
+  rel="noopener noreferrer"
+  href="https://github.com/yourusername/milap"
+  className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
+>
+  <FaGithub className="text-xl" />Git Repo
+</Link>
+
+
+              <a
+                href="/about" // Replace with your GitHub repo link
+                rel="noopener noreferrer"
+                className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-700 transition border-2 border-white"
+              >
+                Read More ➤
+              </a>
+
 
             </div>
           </div>
