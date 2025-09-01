@@ -77,8 +77,14 @@ export default function Home() {
         </motion.div>
       </section>
 
+      
+
       {/* Divider */}
       <div className="border-t border-gray-300 my-16 w-3/4 mx-auto"></div>
+
+
+
+
 
       {/* ===== Projects Section ===== */}
       <section id="projects" className="m-10 mt-32 flex flex-col justify-center items-center gap-12">
@@ -91,7 +97,7 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {/* Image */}
-          <div className="w-full md:w-1/2">
+          <div className="md:w-1/2">
             <Image
               src="/milap.svg"
               alt="Milap App"
@@ -101,7 +107,7 @@ export default function Home() {
             />
           </div>
           {/* Text */}
-          <div className="w-full md:w-1/2 text-center md:text-left">
+          <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-3xl font-bold text-orange-700">Milap</h2>
             <p className="mt-4 text-gray-600">
               A modern dating app with swipe cards, real-time chat, and
@@ -124,7 +130,7 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {/* Image */}
-          <div className="w-full md:w-1/2">
+          <div className=" md:w-1/2">
             <Image
               src="/portfolio.png"
               alt="Portfolio Website"
