@@ -10,7 +10,7 @@ const page = () => {
     <>
       <section
         id="projects"
-        className="m-10 lg:mt-40 mt-20 mb-32 flex flex-col justify-center items-center gap-24"
+        className="m-10 lg:mt-40 mt-20 mb-56 flex flex-col justify-center items-center gap-24"
       >
         {/* Project 1 - Milap */}
         <motion.div

@@ -48,7 +48,7 @@ export default function Home() {
           viewport={{ once: true }}
         >
           <div className="text-lg text-gray-400">Hello, I Am</div>
-          <div className="text-5xl font-extrabold text-orange-700">
+          <div className="text-4xl font-extrabold text-orange-700">
             Dhiraj Jaiswal
           </div>
           <div className="mt-2 text-2xl font-medium">
@@ -74,9 +74,8 @@ export default function Home() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="transform hover:scale-95 transition duration-750"
         >
-          <Image src="/developer.png" alt="My Photo" width={600} height={600} />
+          <Image className="transform hover:scale-95 transition duration-750" src="/developer.png" alt="My Photo" width={600} height={600} />
         </motion.div>
       </section>
 
