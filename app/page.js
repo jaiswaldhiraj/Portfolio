@@ -59,7 +59,7 @@ export default function Home() {
           <motion.a
             href="/resume.pdf"
             download
-            className="inline-block mt-6 px-6 py-3 bg-orange-600 text-xl text-white rounded-lg font-semibold hover:bg-orange-700 transition"
+            className="inline-block mt-6 px-6 py-3 bg-orange-600 text-xl text-white rounded-lg font-semibold hover:bg-orange-700 transition duration-500"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -74,6 +74,7 @@ export default function Home() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
+          className="transform hover:scale-95 transition duration-750"
         >
           <Image src="/developer.png" alt="My Photo" width={600} height={600} />
         </motion.div>
@@ -238,7 +239,7 @@ export default function Home() {
               <a
                 href="/projects" // Replace with your GitHub repo link
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-700 transition border-2 border-white"
+                className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-500 transition border-2 border-white"
               >
                 Read More ➤
               </a>

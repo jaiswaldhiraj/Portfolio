@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between h-16 bg-black text-blue-50 shadow-md">
       {/* Logo */}
-      <div id="nav_logo" className="ml-8 text-2xl font-bold">
+      <div id="nav_logo" className="ml-8 text-4xl font-bold">
         <Link href="/">Dhiraj's Portfolio</Link>
       </div>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
               className={`
               relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
               after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
-              ${pathname === "/" ? "text-blue-400 after:w-full" : "text-white"}
+              ${pathname === "/" ? "text-orange-500 after:w-full" : "text-white"}
             `}
             >
               Home
@@ -51,7 +51,7 @@ const Navbar = () => {
               className={`
               relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
               after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
-              ${pathname === "/about" ? "text-blue-400 after:w-full" : "text-white"}
+              ${pathname === "/about" ? "text-orange-500 after:w-full" : "text-white"}
             `}
             >
               About me
@@ -64,7 +64,7 @@ const Navbar = () => {
               className={`
               relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
               after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
-              ${pathname === "/projects" ? "text-blue-400 after:w-full" : "text-white"}
+              ${pathname === "/projects" ? "text-orange-500 after:w-full" : "text-white"}
             `}
             >
               Projects
@@ -77,7 +77,7 @@ const Navbar = () => {
               className={`
               relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
               after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
-              ${pathname === "/contact" ? "text-blue-400 after:w-full" : "text-white"}
+              ${pathname === "/contact" ? "text-orange-500 after:w-full" : "text-white"}
             `}
             >
               Contact

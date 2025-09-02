@@ -36,14 +36,14 @@ const page = () => {
             <h2 className="text-4xl font-bold text-orange-700">
               Milap - (A Dating App)
             </h2>
-            <p className="mt-4 lg:w-xl text-gray-400">
+            <p className="mt-4 pl-5 lg:w-xl text-gray-400">
               Milap is a modern dating application built for Android with real-time
               features. It allows users to create profiles, swipe through potential
               matches, and connect through an integrated chat system.
             </p>
 
             <h3 className="text-2xl mt-6 text-orange-600">Key Features:</h3>
-            <ul className="mt-2 text-gray-400 list-disc pl-5 space-y-1 text-left items-center">
+            <ul className="mt-2 text-gray-400 list-disc list-inside pl-5 space-y-1 text-left items-center">
               <li>Swipe-based card system (like/dislike) with animations</li>
               <li>User authentication via phone number (Firebase OTP)</li>
               <li>Profile setup with personal details, gender selection, and photo uploads</li>
@@ -53,13 +53,13 @@ const page = () => {
             </ul>
 
             <h3 className="text-2xl mt-6 text-orange-600">Tech Stack:</h3>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 pl-5 text-gray-400">
               Java (Android), Firebase (Realtime Database, Authentication, Cloud
               Functions, FCM), Glide, Lottie Animations
             </p>
 
             <h3 className="text-2xl mt-6 text-orange-600">Role & Contribution:</h3>
-            <ul className="mt-2 text-gray-400 list-disc pl-5 space-y-1 text-left">
+            <ul className="mt-2 text-gray-400 list-inside list-disc pl-5 space-y-1 text-left">
               <li>Designed and developed the complete Android app from scratch</li>
               <li>Implemented swipe card animations and profile matching logic</li>
               <li>Integrated Firebase backend for authentication, storage, and messaging</li>
@@ -79,7 +79,7 @@ const page = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/yourusername/milap"
-                className="flex items-center gap-2 px-2 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
+                className="flex items-center gap-2 p-3 px-2 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
               >
                 <FaGithub className="text-xl" />
                 GitHub Repository
@@ -119,12 +119,12 @@ const page = () => {
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="text-5xl font-bold text-orange-700">Personal Portfolio Website</h2>
 
-            <p className="mt-4 text-gray-400 ">
+            <p className="mt-4 pl-5 text-gray-400 ">
               My personal portfolio built with Next.js and Tailwind CSS,
               showcasing projects and skills.
             </p>
             <p className="text-3xl mt-6 text-orange-600">Key Features:</p>
-            <ol className="mt-2 text-gray-400 list-disc text-left">
+            <ol className="mt-2 text-gray-400 list-disc list-inside text-left">
               <li>Built with Next.js and styled with Tailwind CSS</li>
               <li>Smooth animations using Framer Motion and Lottie</li>
               <li>Responsive navbar with mobile menu</li>
@@ -133,16 +133,16 @@ const page = () => {
             </ol>
 
             <p className="text-3xl mt-6 text-orange-600">Tech Stack:</p>
-            <p className="mt-2  text-gray-400 ">Next.js, React, Tailwind CSS, Framer Motion, Vercel (deployment)</p>
+            <p className="mt-2  text-gray-400 pl-5">Next.js, React, Tailwind CSS, Framer Motion, Vercel (deployment)</p>
 
 
             <p className="text-3xl mt-6 text-orange-600">Role & Contribution:</p>
 
-            <ol className="mt-2 text-gray-400 list-disc text-left">
+            <ul className="mt-2 text-gray-400 list-disc list-inside text-left">
               <li>Designed UI/UX and implemented responsive layout</li>
               <li>Added interactive animations for modern look</li>
               <li>Structured content for recruiters: About, Projects, Contact</li>
-            </ol>
+            </ul>
 
             <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
 
