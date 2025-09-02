@@ -45,7 +45,7 @@ export default function Home() {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <div className="text-lg text-gray-400">Hello, I Am</div>
           <div className="text-4xl font-extrabold text-orange-700">
@@ -73,7 +73,7 @@ export default function Home() {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <Image className="transform hover:scale-95 transition duration-750" src="/developer.png" alt="My Photo" width={600} height={600} />
         </motion.div>
@@ -88,7 +88,7 @@ export default function Home() {
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.3 }}
       >
         <h1 className="text-5xl font-bold text-orange-700 md:ml-40 ml-8 ">My Projects 🚀</h1>
 
@@ -105,10 +105,10 @@ export default function Home() {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           {/* Image */}
-          <div className="md:w-1/2 relative flex justify-center items-center p-6 rounded-2xl overflow-hidden shadow-lg transform hover:scale-95 transition duration-750">
+          <div className="md:w-1/2 rounded-2xl shadow-amber-500 shadow-2xl relative flex justify-center items-center p-6 overflow-hidden transform hover:scale-95 transition duration-750">
             {/* Background image with transparency */}
             <div className="absolute inset-0 bg-[url('/milap-bg.png')] bg-cover bg-center opacity-95"></div>
 
@@ -118,7 +118,7 @@ export default function Home() {
               alt="Milap App"
               width={450}
               height={350}
-              className="relative z-10"
+              className="relative z-10 "
             />
           </div>
 
@@ -179,7 +179,7 @@ export default function Home() {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           {/* Image */}
           <div className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750
@@ -189,7 +189,7 @@ export default function Home() {
               alt="Portfolio Website"
               width={600}
               height={400}
-              className="rounded-2xl shadow-lg"
+              className=" rounded-2xl shadow-amber-500 shadow-2xl"
             />
           </div>
           {/* Text */}

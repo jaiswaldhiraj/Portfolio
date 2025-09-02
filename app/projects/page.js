@@ -18,7 +18,7 @@ const page = () => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           {/* Image */}
           <div className="md:w-1/2 flex justify-center p-6 transform hover:scale-95 transition duration-500">
@@ -27,7 +27,7 @@ const page = () => {
               alt="Milap App"
               width={450}
               height={350}
-              className="rounded-2xl shadow-lg"
+              className="rounded-2xl shadow-amber-500 shadow-2xl"
             />
           </div>
 
@@ -102,7 +102,7 @@ const page = () => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           {/* Image */}
           <div className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750
@@ -112,7 +112,7 @@ const page = () => {
               alt="Portfolio Website"
               width={600}
               height={400}
-              className="rounded-2xl shadow-lg"
+              className="rounded-2xl shadow-amber-500 shadow-2xl"
             />
           </div>
           {/* Text */}
