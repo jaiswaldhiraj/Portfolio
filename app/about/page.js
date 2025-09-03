@@ -33,10 +33,7 @@ const page = () => {
 
         </motion.div>
 
-
-
         {/* Skills Section */}
-
         <div>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -46,15 +43,26 @@ const page = () => {
           >
             <h2 className="text-3xl  font-bold text-orange-600 mt-14 mb-5">Skills 🛠</h2>
             <ul className="list-disc pl-5 list-inside mt-2 text-gray-500">
-              <li><span className='font-semibold text-gray-400'>Programming:</span> C, C++, Java, Python</li>
-              <li><span className='font-semibold text-gray-400'>App Development:</span> Java, Java XML, Firebase</li>
-              <li><span className='font-semibold text-gray-400'>Web Development:</span> HTML, CSS, JavaScript, PHP, MySQL, MongoDB</li>
-              <li><span className='font-semibold text-gray-400'>Frameworks:</span> Tailwind CSS, React JS, Next.js</li>
+              <li>
+                <span
+                  className='font-semibold text-gray-400'>Programming:</span>
+                C, C++, Java, Python</li>
+              <li>
+                <span
+                  className='font-semibold text-gray-400'>App Development:</span>
+                Java, Java XML, Firebase</li>
+              <li>
+                <span
+                  className='font-semibold text-gray-400'>Web Development:</span>
+                HTML, CSS, JavaScript, PHP, MySQL, MongoDB</li>
+              <li>
+                <span
+                  className='font-semibold text-gray-400'>Frameworks:</span>
+                Tailwind CSS, React JS, Next.js</li>
               <li>Data Structures & Algorithms <span className="font-bold">(DSA)</span> (C++)</li>
             </ul>
 
           </motion.div>
-
 
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -72,7 +80,6 @@ const page = () => {
             </ul>
           </motion.div>
         </div>
-
 
         {/* Education section */}
 

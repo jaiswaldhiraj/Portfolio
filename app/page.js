@@ -16,7 +16,7 @@ export default function Home() {
         strings: [
           "Application Developer",
           "Web Developer ",
-          "Tech Enthusiast 🚀",
+          "Tech Enthusiast",
         ],
         typeSpeed: 60,
         backSpeed: 40,
@@ -33,12 +33,13 @@ export default function Home() {
 
   return (
     <>
-      {/* ===== Hero Section ===== */}
+      {/* ===== Intro Section ===== */}
       <section
         id="firstsection"
         className="m-10 mt-32 flex flex-col md:flex-row justify-center items-center gap-12"
       >
-        {/* Text Section */}
+
+        {/* Intro Text Section */}
         <motion.div
           id="textsection"
           className="w-96 text-center md:text-left"
@@ -48,14 +49,17 @@ export default function Home() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <div className="text-lg text-gray-400">Hello, I Am</div>
-          <div className="text-4xl font-extrabold text-orange-700">
+
+          <div className="text-5xl font-extrabold text-orange-700">
             Dhiraj Jaiswal
           </div>
+
+          {/* Typed JS here */}
           <div className="mt-2 text-2xl font-medium">
             <span ref={typedRef}></span>
           </div>
 
-          {/* Call to Action */}
+          {/* Download Resume */}
           <motion.a
             href="/resume.pdf"
             download
@@ -65,9 +69,10 @@ export default function Home() {
           >
             Download Resume
           </motion.a>
+
         </motion.div>
 
-        {/* Image Section */}
+        {/* Intro Image Section */}
         <motion.div
           id="imagesection"
           initial={{ opacity: 0, x: 100 }}
@@ -75,8 +80,15 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <Image className="transform hover:scale-95 transition duration-750" src="/developer.png" alt="My Photo" width={600} height={600} />
+          <Image 
+            src="/developer.png" 
+            className="transform hover:scale-95 transition duration-750"
+            alt="My Photo" 
+            width={600} height={600} 
+          />
+
         </motion.div>
+
       </section>
 
 
@@ -84,16 +96,18 @@ export default function Home() {
       {/* Divider */}
       <div className="border-t border-gray-300 my-16 w-6/7 mx-auto"></div>
 
+      {/* Project Heading */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
-      >
-        <h1 className="text-5xl font-bold text-orange-700 md:ml-40 ml-8 ">My Projects 🚀</h1>
+        >
+          <h1 className="text-5xl font-bold text-orange-700 md:ml-40 ml-8 ">
+            My Projects 🚀
+          </h1>
 
       </motion.div>
-
 
 
 
@@ -155,7 +169,7 @@ export default function Home() {
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/yourusername/milap"
+                href="https://github.com/jaiswaldhiraj/Milap"
                 className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
               >
                 <FaGithub className="text-xl" />Git Repo
@@ -181,9 +195,11 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          {/* Image */}
-          <div className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750
-">
+
+          {/* Portfolio Image */}
+          <div 
+          className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750"
+          >
             <Image
               src="/portfolio.png"
               alt="Portfolio Website"
@@ -191,19 +207,22 @@ export default function Home() {
               height={400}
               className=" rounded-2xl shadow-amber-500 shadow-2xl"
             />
+
           </div>
-          {/* Text */}
+
+          {/* Portfolio Text */}
+
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="text-5xl font-bold text-orange-700">
-              Portfolio Website
-            </h2>
+
+            <h2 className="text-5xl font-bold text-orange-700">Portfolio Website</h2>
+
             <p className="mt-4 text-gray-600">
               My personal portfolio built with Next.js and Tailwind CSS,
               showcasing projects and skills.
             </p>
-            <p className="mt-2 text-gray-400 text-l">
-              Technologies used -
-            </p>
+
+            <p className="mt-2 text-gray-400 text-l">Technologies used -</p>
+
             <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
 
               <div className=" flex justify-center items-center p-4 rounded-xl bg-white">
@@ -224,25 +243,24 @@ export default function Home() {
                 />
               </div>
 
-
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/yourusername/milap"
+                href="https://github.com/jaiswaldhiraj/Portfolio"
                 className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
               >
-                <FaGithub className="text-xl" />Git Repo
+                <FaGithub className="text-xl" />
+                Git Repo
               </Link>
 
-
               <a
-                href="/projects" // Replace with your GitHub repo link
+                href="/projects"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-500 transition border-2 border-white"
-              >
+                className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-500 
+                transition border-2 border-white"
+                >
                 Read More ➤
               </a>
-
 
             </div>
           </div>

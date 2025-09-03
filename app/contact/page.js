@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import React from 'react'
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaCopy, FaCheck } from "react-icons/fa";
 import Image from "next/image";
@@ -16,13 +14,10 @@ const page = () => {
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // reset after 2s
+    setTimeout(() => setCopied(false), 2000);
   };
 
-
-
   return (
-
     <>
       <motion.div
         initial={{ opacity: 0, x: -100 }}
@@ -42,8 +37,6 @@ const page = () => {
 
           <div className="w-full max-w-sm flex flex-col justify-center gap-5 px-4">
 
-
-
             <motion.a
               href="mailto:jaiswaldhiraj928@gmail.com"
               target="_blank"
@@ -51,23 +44,23 @@ const page = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center gap-4 p-3.5 rounded-xl bg-gray-800 hover:bg-gray-700 
-            transition duration-300"
+              transition duration-300"
             >
               <FaEnvelope className="text-xl " />
               Email
             </motion.a>
 
-              {/* Copy button */}
-              <motion.button
-                onClick={handleCopy}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center justify-center gap-4 p-3.5 rounded-xl bg-gray-800 hover:bg-gray-700 
-            transition duration-300"
-              >
-                {copied ? <FaCheck className="text-green-400 text-xl" /> : <FaCopy />}
-                {copied ? "Copied!" : "Copy Email"}
-              </motion.button>
+            {/* Copy button */}
+            <motion.button
+              onClick={handleCopy}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center justify-center gap-4 p-3.5 rounded-xl bg-gray-800 hover:bg-gray-700 
+              transition duration-300"
+            >
+              {copied ? <FaCheck className="text-green-400 text-xl" /> : <FaCopy />}
+              {copied ? "Copied!" : "Copy Email"}
+            </motion.button>
 
             <motion.a
               href="https://github.com/jaiswaldhiraj"
@@ -81,19 +74,18 @@ const page = () => {
               GitHub
             </motion.a>
 
-
             <motion.a
               href="https://www.linkedin.com/in/jaiswaldhiraj/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-3 p-3.5 rounded-xl bg-white font-bold text-blue-500 transition duration-300"
+              className="flex items-center justify-center gap-3 p-3.5 rounded-xl bg-white font-bold text-blue-500 
+              transition duration-300"
             >
               <FaLinkedin className="text-xl text-blue-500" />
               LinkedIn
             </motion.a>
-
 
             <motion.a
               href="/resume.pdf"
@@ -106,8 +98,8 @@ const page = () => {
               <FaFileAlt className="text-2xl" />
               Resume
             </motion.a>
-          </div>
 
+          </div>
 
           {/* Right side - Image (hidden on small screens) */}
           <div className=" hidden lg:flex justify-center">

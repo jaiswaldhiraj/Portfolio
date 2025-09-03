@@ -83,6 +83,7 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+
         </ul>
       </div>
     </nav>
