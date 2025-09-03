@@ -40,7 +40,7 @@ const Page = () => {
         <section className="max-w-5xl mx-auto mt-36 px-6">
 
           <div>
-            <h1 className="text-5xl font-bold text-orange-700 mb-4">Contact Me </h1>
+            <h1 className="md:text-5xl text-3xl font-bold text-orange-700 mb-4">Contact Me </h1>
             <p className=' pl-6 text-gray-500 leading-relaxed'>&#x2013; Let&#39;s Build Something Great Together</p>
           </div>
         </section>

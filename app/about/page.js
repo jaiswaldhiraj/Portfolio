@@ -16,10 +16,10 @@ const Page = () => {
         >
 
           <div>
-            <h1 className="text-5xl font-bold text-orange-700 mb-10">About Me 🧑‍💻 </h1>
+            <h1 className="md:text-5xl text-4xl font-bold text-orange-700 mb-10">About Me 🧑‍💻 </h1>
 
-            <p className="text-lg pl-4 mb-3 text-gray-500 leading-relaxed">
-              Hi, I&rsquo;m <span className="font-extrabold text-3xl text-orange-700">Dhiraj Jaiswal</span> 👋
+            <p className="md:text-5xl text-lg pl-4 mb-3 text-gray-500 leading-relaxed">
+              Hi, I&rsquo;m <span className="font-extrabold text-2xl text-orange-700">Dhiraj Jaiswal</span> 👋
             </p>
 
             <p className='text-lg pl-6 text-gray-500 leading-relaxed'>
@@ -41,7 +41,7 @@ const Page = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl  font-bold text-orange-600 mt-14 mb-5">Skills 🛠</h2>
+            <h2 className="md:text-5xl text-xl  font-bold text-orange-600 mt-14 mb-5">Skills 🛠</h2>
             <ul className="list-disc pl-5 list-inside mt-2 text-gray-500">
               <li>
                 <span
@@ -70,7 +70,7 @@ const Page = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl  font-bold text-orange-600 mt-14 mb-5">Soft Skills 💡 </h2>
+            <h2 className="md:text-5xl text-xl  font-bold text-orange-600 mt-14 mb-5">Soft Skills 💡 </h2>
             <ul className="list-disc pl-5 list-inside mt-2 text-gray-500">
               <li>Teamwork & Collaboration</li>
               <li>Quick Learner & Adaptability</li>
@@ -90,7 +90,7 @@ const Page = () => {
           viewport={{ once: true }}
         >
           <div>
-            <h2 className="text-3xl font-bold text-orange-600 mt-14 mb-5">Education 🎓</h2>
+            <h2 className="md:text-5xl text-xl font-bold text-orange-600 mt-14 mb-5">Education 🎓</h2>
 
             <p className="m-5 mt-2 pl-5 text-gray-500">
 

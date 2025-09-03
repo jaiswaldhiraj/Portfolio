@@ -62,7 +62,7 @@ export default function Home() {
         >
           <div className="text-lg text-gray-400">Hello, I Am</div>
 
-          <div className="text-5xl font-extrabold text-orange-700">
+          <div className="md:text-5xl text-4xl font-extrabold text-orange-700">
             Dhiraj Jaiswal
           </div>
 
@@ -111,7 +111,7 @@ export default function Home() {
       <div className="border-t border-gray-300 my-16 w-6/7 mx-auto"></div>
 
       {/* Project Heading */}
-      <h1 className="text-5xl font-bold text-orange-700 md:ml-40 ml-8 ">
+      <h1 className="md:text-5xl text-4xl font-bold text-orange-700 md:ml-40 ml-8 ">
         My Projects 🚀
       </h1>
 
@@ -147,7 +147,7 @@ export default function Home() {
 
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-5xl font-bold text-orange-700">Milap &#x2013; ( Dating App )</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">Milap &#x2013; ( Dating App )</h2>
             <p className="mt-4 text-gray-600">
               A modern dating app with swipe cards, real-time chat, and
               Firebase-powered matchmaking.
@@ -226,7 +226,7 @@ export default function Home() {
 
           <div className="w-full md:w-1/2 text-center md:text-left">
 
-            <h2 className="text-5xl font-bold text-orange-700">Portfolio Website</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">Portfolio Website</h2>
 
             <p className="mt-4 text-gray-600">
               My personal portfolio built with Next.js and Tailwind CSS,

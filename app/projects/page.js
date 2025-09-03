@@ -36,7 +36,7 @@ const Page = () => {
 
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-4xl font-bold text-orange-700">
+            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">
               Milap &#x2013; (A Dating App)
             </h2>
             <p className="mt-4 pl-5 lg:w-xl text-gray-400">
@@ -45,7 +45,7 @@ const Page = () => {
               matches, and connect through an integrated chat system.
             </p>
 
-            <h3 className="text-2xl mt-6 text-orange-600">Key Features:</h3>
+            <h3 className="md:text-3xl text-xl mt-6 text-orange-600">Key Features:</h3>
 
             <ul className="mt-2 text-gray-400 list-disc list-inside pl-5 space-y-1 text-left items-center">
               <li>Swipe-based card system (like/dislike) with animations</li>
@@ -56,14 +56,14 @@ const Page = () => {
               <li>Push notifications with Firebase Cloud Messaging</li>
             </ul>
 
-            <h3 className="text-2xl mt-6 text-orange-600">Tech Stack:</h3>
+            <h3 className="md:text-3xl text-xl mt-6 text-orange-600">Tech Stack:</h3>
 
             <p className="mt-2 pl-5 text-gray-400">
               Java (Android), Firebase (Realtime Database, Authentication, Cloud
               Functions, FCM), Glide, Lottie Animations
             </p>
 
-            <h3 className="text-2xl mt-6 text-orange-600">Role & Contribution:</h3>
+            <h3 className="md:text-3xl text-xl mt-6 text-orange-600">Role & Contribution:</h3>
 
             <ul className="mt-2 text-gray-400 list-inside list-disc pl-5 space-y-1 text-left">
               <li>Designed and developed the complete Android app from scratch</li>
@@ -128,14 +128,14 @@ const Page = () => {
           {/* Text */}
           <div className="w-full md:w-1/2 text-center md:text-left">
 
-            <h2 className="text-5xl font-bold text-orange-700">Personal Portfolio Website</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">Personal Portfolio Website</h2>
 
             <p className="mt-4 pl-5 text-gray-400 ">
               My personal portfolio built with Next.js and Tailwind CSS,
               showcasing projects and skills.
             </p>
 
-            <p className="text-3xl mt-6 text-orange-600">Key Features:</p>
+            <p className="md:text-3xl text-xl mt-6 text-orange-600">Key Features:</p>
 
             <ol className="mt-2 pl-5 text-gray-400 list-disc list-inside text-left">
               <li>Built with Next.js and styled with Tailwind CSS</li>
@@ -145,11 +145,11 @@ const Page = () => {
               <li>Contact page with social links (GitHub, LinkedIn, Gmail)</li>
             </ol>
 
-            <p className="text-3xl mt-6 text-orange-600">Tech Stack:</p>
+            <p className="md:text-3xl text-xl mt-6 text-orange-600">Tech Stack:</p>
 
             <p className="mt-2  text-gray-400 pl-5">Next.js, React, Tailwind CSS, Framer Motion, Vercel (deployment)</p>
 
-            <p className="text-3xl mt-6 text-orange-600">Role & Contribution:</p>
+            <p className="md:text-3xl text-xl mt-6 text-orange-600">Role & Contribution:</p>
 
             <ul className="mt-2 pl-5 text-gray-400 list-disc list-inside text-left">
               <li>Designed UI/UX and implemented responsive layout</li>
