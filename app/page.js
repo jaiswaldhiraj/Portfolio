@@ -31,17 +31,17 @@ export default function Home() {
     }
   }, []);
 
-    const [downloading, setDownloading] = useState(false);
-  
-    const handleDownload = () => {
-      if (downloading) return;
-  
-      setDownloading(true);
-  
-      setTimeout(() => {
-        setDownloading(false)
-      }, 4000);
-    }
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = () => {
+    if (downloading) return;
+
+    setDownloading(true);
+
+    setTimeout(() => {
+      setDownloading(false)
+    }, 4000);
+  }
 
   return (
     <>
@@ -58,7 +58,7 @@ export default function Home() {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
         >
           <div className="text-lg text-gray-400">Hello, I Am</div>
 
@@ -91,13 +91,14 @@ export default function Home() {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
         >
-          <Image 
-            src="/developer.png" 
+          <Image
+            src="/developer.png"
             className="transform hover:scale-95 transition duration-750"
-            alt="My Photo" 
-            width={600} height={600} 
+            alt="My Photo"
+            width={600} height={600}
+            loading="lazy"
           />
 
         </motion.div>
@@ -110,17 +111,11 @@ export default function Home() {
       <div className="border-t border-gray-300 my-16 w-6/7 mx-auto"></div>
 
       {/* Project Heading */}
-      <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.3 }}
-        >
-          <h1 className="text-5xl font-bold text-orange-700 md:ml-40 ml-8 ">
-            My Projects 🚀
-          </h1>
+      <h1 className="text-5xl font-bold text-orange-700 md:ml-40 ml-8 ">
+        My Projects 🚀
+      </h1>
 
-      </motion.div>
+
 
 
 
@@ -132,7 +127,7 @@ export default function Home() {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
         >
           {/* Image */}
           <div className="md:w-1/2 rounded-2xl shadow-amber-500 shadow-2xl relative flex justify-center items-center p-6 overflow-hidden transform hover:scale-95 transition duration-750">
@@ -145,6 +140,7 @@ export default function Home() {
               alt="Milap App"
               width={450}
               height={350}
+              loading="lazy"
               className="relative z-10 "
             />
           </div>
@@ -168,6 +164,7 @@ export default function Home() {
                   alt="Portfolio Website"
                   width={120}
                   height={20}
+                  loading="lazy"
                 />
               </div>
               <div className=" flex justify-center items-center p-1 rounded-xl bg-white">
@@ -176,6 +173,7 @@ export default function Home() {
                   alt="Portfolio Website"
                   width={120}
                   height={20}
+                  loading="lazy"
                 />
               </div>
 
@@ -206,18 +204,19 @@ export default function Home() {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
         >
 
           {/* Portfolio Image */}
-          <div 
-          className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750"
+          <div
+            className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750"
           >
             <Image
               src="/portfolio.png"
               alt="Portfolio Website"
               width={600}
               height={400}
+              loading="lazy"
               className=" rounded-2xl shadow-amber-500 shadow-2xl"
             />
 
@@ -244,6 +243,7 @@ export default function Home() {
                   alt="Portfolio Website"
                   width={120}
                   height={30}
+                  loading="lazy"
                 />
               </div>
 
@@ -253,6 +253,7 @@ export default function Home() {
                   alt="Portfolio Website"
                   width={120}
                   height={30}
+                  loading="lazy"
                 />
               </div>
 
@@ -271,13 +272,13 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-500 
                 transition border-2 border-white"
-                >
+              >
                 Read More ➤
               </a>
 
             </div>
           </div>
-        </motion.div> 
+        </motion.div>
       </section>
     </>
   );

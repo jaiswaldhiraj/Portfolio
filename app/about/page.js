@@ -12,7 +12,7 @@ const Page = () => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
         >
 
           <div>
@@ -39,7 +39,7 @@ const Page = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true }}
           >
             <h2 className="text-3xl  font-bold text-orange-600 mt-14 mb-5">Skills 🛠</h2>
             <ul className="list-disc pl-5 list-inside mt-2 text-gray-500">
@@ -68,7 +68,7 @@ const Page = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true }}
           >
             <h2 className="text-3xl  font-bold text-orange-600 mt-14 mb-5">Soft Skills 💡 </h2>
             <ul className="list-disc pl-5 list-inside mt-2 text-gray-500">
@@ -87,7 +87,7 @@ const Page = () => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
         >
           <div>
             <h2 className="text-3xl font-bold text-orange-600 mt-14 mb-5">Education 🎓</h2>
