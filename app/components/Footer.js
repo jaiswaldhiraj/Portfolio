@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 const Footer = () =>{
   return (
@@ -48,10 +48,21 @@ const Footer = () =>{
         </div>
 
         {/* Right Section (Social Links) */}
+
+          <a
+            href="mailto:jaiswaldhiraj928@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-orange-500 hover:scale-125 transition-transform duration-300"
+          >
+            <FaEnvelope />
+          </a>
+
+
         <div className="flex gap-5 text-xl">
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/jaiswaldhiraj"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange-500 hover:scale-125 transition-transform duration-300"
@@ -60,21 +71,12 @@ const Footer = () =>{
           </a>
 
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/jaiswaldhiraj/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange-500 hover:scale-125 transition-transform duration-300"
           >
             <FaLinkedin />
-          </a>
-
-          <a
-            href="https://twitter.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-orange-500 hover:scale-125 transition-transform duration-300"
-          >
-            <FaTwitter />
           </a>
 
         </div>
