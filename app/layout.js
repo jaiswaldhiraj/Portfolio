@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "About | Dhiraj Jaiswal - Web Developer",
+  title: "Dhiraj Jaiswal App and Web Developer",
   description: "Learn more about Dhiraj Jaiswal, a web and application developer specializing in Java and Java(XML) Next.js, React, and modern web apps.",
-  keywords: ["Portfolio", "Next.js Developer", "React", "Web Developer", "Dhiraj Jaiswal"],
+  keywords: ["Portfolio", "Next.js Developer", "React", "Web Developer","Application Developer", "Dhiraj Jaiswal"],
 };
 
 export default function RootLayout({ children }) {
