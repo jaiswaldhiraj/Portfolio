@@ -112,7 +112,7 @@ export default function Home() {
 
       {/* Project Heading */}
       <h1 className="md:text-5xl text-4xl font-bold text-orange-700 md:ml-40 ml-8 ">
-        My Projects 🚀
+        My Projects
       </h1>
 
 
