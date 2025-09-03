@@ -49,6 +49,9 @@ const Footer = () =>{
 
         {/* Right Section (Social Links) */}
 
+
+        <div className="flex gap-5 text-xl">
+
           <a
             href="mailto:jaiswaldhiraj928@gmail.com"
             target="_blank"
@@ -57,9 +60,6 @@ const Footer = () =>{
           >
             <FaEnvelope />
           </a>
-
-
-        <div className="flex gap-5 text-xl">
 
           <a
             href="https://github.com/jaiswaldhiraj"
