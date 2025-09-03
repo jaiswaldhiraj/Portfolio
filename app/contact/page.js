@@ -17,6 +17,18 @@ const Page = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = () => {
+    if (downloading) return;
+
+    setDownloading(true);
+
+    setTimeout(() => {
+      setDownloading(false)
+    }, 4000);
+  }
+
   return (
     <>
       <motion.div
@@ -90,13 +102,15 @@ const Page = () => {
             <motion.a
               href="https://drive.google.com/uc?export=download&id=1Rk2IAPFESXPDPbSMPpEso-Z8xC9JTCmB"
               download
+              onClick={handleDownload}
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center gap-4 p-3.5 rounded-xl bg-orange-500 transition duration-300"
             >
               <FaFileAlt className="text-2xl" />
-              Resume
+              {/* Resume */}
+              {downloading ? "Downloading..." : "Resume"}
             </motion.a>
 
           </div>

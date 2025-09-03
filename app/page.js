@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Typed from "typed.js";
 import { motion } from "framer-motion";
@@ -30,6 +30,18 @@ export default function Home() {
       };
     }
   }, []);
+
+    const [downloading, setDownloading] = useState(false);
+  
+    const handleDownload = () => {
+      if (downloading) return;
+  
+      setDownloading(true);
+  
+      setTimeout(() => {
+        setDownloading(false)
+      }, 4000);
+    }
 
   return (
     <>
@@ -63,11 +75,12 @@ export default function Home() {
           <motion.a
             href="https://drive.google.com/uc?export=download&id=1Rk2IAPFESXPDPbSMPpEso-Z8xC9JTCmB"
             download
+            onClick={handleDownload}
             className="inline-block mt-6 px-6 py-3 bg-orange-600 text-xl text-white rounded-lg font-semibold hover:bg-orange-700 transition duration-500"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Download Resume
+            {downloading ? "Downloading..." : "Download Resume"}
           </motion.a>
 
         </motion.div>
