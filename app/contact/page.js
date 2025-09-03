@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-const page = () => {
+const Page = () => {
 
   const [copied, setCopied] = useState(false);
   const email = "jaiswaldhiraj928@gmail.com";
@@ -29,7 +29,7 @@ const page = () => {
 
           <div>
             <h1 className="text-5xl font-bold text-orange-700 mb-4">Contact Me </h1>
-            <p className=' pl-6 text-gray-500 leading-relaxed'> &mdash; Let’s Build Something Great Together</p>
+            <p className=' pl-6 text-gray-500 leading-relaxed'>&#x2013; Let&#39;s Build Something Great Together</p>
           </div>
         </section>
 
@@ -118,4 +118,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

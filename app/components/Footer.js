@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 
-export default function Footer() {
+const Footer = () =>{
   return (
     <footer className="bg-black text-gray-300 border-t border-gray-800 mt-10">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
@@ -83,3 +83,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export default Footer;

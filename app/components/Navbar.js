@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between h-16 bg-black text-blue-50 shadow-md">
       {/* Logo */}
       <div id="nav_logo" className="ml-8 text-3xl font-bold">
-        <Link href="/">Dhiraj's Portfolio</Link>
+        <Link href="/">Dhiraj&#39;s Portfolio</Link>
       </div>
 
       {/* Links */}

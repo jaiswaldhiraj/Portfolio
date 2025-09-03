@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 
-const page = () => {
+const Page = () => {
   return (
     <>
 
@@ -19,7 +19,7 @@ const page = () => {
             <h1 className="text-5xl font-bold text-orange-700 mb-10">About Me 🧑‍💻 </h1>
 
             <p className="text-lg pl-4 mb-3 text-gray-500 leading-relaxed">
-              Hi, I’m <span className="font-extrabold text-3xl text-orange-700">Dhiraj Jaiswal</span> 👋
+              Hi, I&rsquo;m <span className="font-extrabold text-3xl text-orange-700">Dhiraj Jaiswal</span> 👋
             </p>
 
             <p className='text-lg pl-6 text-gray-500 leading-relaxed'>
@@ -95,21 +95,21 @@ const page = () => {
             <p className="m-5 mt-2 pl-5 text-gray-500">
 
               Bachelor of Computer Applications <span className="font-bold">(BCA)</span><br />
-              K. P. B. Hinduja College of Commerce (2022 – 2025)<br />
+              K. P. B. Hinduja College of Commerce (2022 &#x2013; 2025)<br />
               <span className="font-semibold underline italic text-gray-400">CGPA - 7.47</span>
 
             </p>
             <p className="m-5 mt-2 pl-5  text-gray-500">
 
               Higher Secondary Certificate <span className="font-bold">(HSC)</span><br />
-              Kapol High School & Jr. College (2021 – 2022)<br />
+              Kapol High School & Jr. College (2021 &#x2013; 2022)<br />
               <span className="font-semibold underline italic text-gray-400">Percentage 80</span>
 
             </p>
             <p className="m-5 mt-2 pl-5  text-gray-500">
 
               Secondary School Certificate <span className="font-bold">(SSC)</span><br />
-              St.Augusthi High School (2019 – 2020)<br />
+              St.Augusthi High School (2019 &#x2013; 2020)<br />
               <span className="font-semibold underline italic text-gray-400">Percentage 80.40</span>
 
             </p>
@@ -121,4 +121,4 @@ const page = () => {
   );
 }
 
-export default page
+export default Page

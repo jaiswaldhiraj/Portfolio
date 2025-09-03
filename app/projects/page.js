@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
-const page = () => {
+const Page = () => {
   
   return (
     <>
@@ -36,7 +36,7 @@ const page = () => {
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-4xl font-bold text-orange-700">
-              Milap - (A Dating App)
+              Milap &#x2013; (A Dating App)
             </h2>
             <p className="mt-4 pl-5 lg:w-xl text-gray-400">
               Milap is a modern dating application built for Android with real-time
@@ -193,4 +193,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -138,13 +138,13 @@ export default function Home() {
 
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-5xl font-bold text-orange-700">Milap - ( Dating App )</h2>
+            <h2 className="text-5xl font-bold text-orange-700">Milap &#x2013; ( Dating App )</h2>
             <p className="mt-4 text-gray-600">
               A modern dating app with swipe cards, real-time chat, and
               Firebase-powered matchmaking.
             </p>
             <p className="mt-2 text-gray-400 text-l">
-              Technologies used -
+              Technologies used &#x2013;
             </p>
             <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
 
@@ -221,7 +221,7 @@ export default function Home() {
               showcasing projects and skills.
             </p>
 
-            <p className="mt-2 text-gray-400 text-l">Technologies used -</p>
+            <p className="mt-2 text-gray-400 text-l">Technologies used &#x2013;</p>
 
             <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
 
