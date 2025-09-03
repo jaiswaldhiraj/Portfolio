@@ -88,7 +88,7 @@ const Page = () => {
             </motion.a>
 
             <motion.a
-              href="/resume.pdf"
+              href="https://drive.google.com/uc?export=download&id=1Rk2IAPFESXPDPbSMPpEso-Z8xC9JTCmB"
               download
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

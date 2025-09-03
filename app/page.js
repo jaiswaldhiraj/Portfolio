@@ -61,7 +61,7 @@ export default function Home() {
 
           {/* Download Resume */}
           <motion.a
-            href="/resume.pdf"
+            href="https://drive.google.com/uc?export=download&id=1Rk2IAPFESXPDPbSMPpEso-Z8xC9JTCmB"
             download
             className="inline-block mt-6 px-6 py-3 bg-orange-600 text-xl text-white rounded-lg font-semibold hover:bg-orange-700 transition duration-500"
             whileHover={{ scale: 1.05 }}
