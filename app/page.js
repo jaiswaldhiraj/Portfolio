@@ -31,17 +31,6 @@ export default function Home() {
     }
   }, []);
 
-  const [downloading, setDownloading] = useState(false);
-
-  const handleDownload = () => {
-    if (downloading) return;
-
-    setDownloading(true);
-
-    setTimeout(() => {
-      setDownloading(false)
-    }, 4000);
-  }
 
   return (
     <>
@@ -73,14 +62,15 @@ export default function Home() {
 
           {/* Download Resume */}
           <motion.a
-            href="https://drive.google.com/uc?export=download&id=1Rk2IAPFESXPDPbSMPpEso-Z8xC9JTCmB"
+            href="https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
             download
-            onClick={handleDownload}
             className="inline-block mt-6 px-6 py-3 bg-orange-600 text-xl text-white rounded-lg font-semibold hover:bg-orange-700 transition duration-500"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            {downloading ? "Downloading..." : "Download Resume"}
+            Download Resume
           </motion.a>
 
         </motion.div>
@@ -187,7 +177,7 @@ export default function Home() {
               </Link>
 
               <a
-                href="/projects" 
+                href="/projects"
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-700 transition border-2 border-white"
               >
