@@ -37,7 +37,7 @@ const Page = () => {
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="md:text-5xl text-3xl font-bold text-orange-700">
-              Milap &#x2013; (A Dating App)
+              Milap &#x2013; (Dating App)
             </h2>
             <p className="mt-4 pl-5 lg:w-xl text-gray-400">
               Milap is a modern dating application built for Android with real-time

@@ -147,7 +147,7 @@ export default function Home() {
 
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">Milap &#x2013; ( Dating App )</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">Milap &#x2013; (Dating App)</h2>
             <p className="mt-4 text-gray-600">
               A modern dating app with swipe cards, real-time chat, and
               Firebase-powered matchmaking.
