@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaAndroid   } from "react-icons/fa";
 
 const Page = () => {
   
@@ -86,13 +86,25 @@ const Page = () => {
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/jaiswaldhiraj/Milap"
+                href="https://github.com/jaiswaldhiraj/Milap-Repo-Public"
                 className="flex items-center gap-2 p-2 px-2 rounded-xl bg-cyan-950 text-white font-medium shadow-md 
                 hover:bg-cyan-900 transition border-2 border-white"
               >
                 <FaGithub className="text-xl" />
                 GitHub Repository
               </Link>
+
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/jaiswaldhiraj/Milap-Repo-Public/releases/download/v1.0.0/Milap.apk"
+                className="flex items-center gap-2 p-2 px-2 rounded-xl bg-green-500 text-white font-medium shadow-md 
+                hover:bg-green-700 transition border-2 border-white"
+              >
+                <FaAndroid   className="text-xl" />
+                Download Milap Apk
+              </Link>
+
             </div>
           </div>
         </motion.div>

@@ -180,14 +180,14 @@ export default function Home() {
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/jaiswaldhiraj/Milap"
+                href="https://github.com/jaiswaldhiraj/Milap-Repo-Public"
                 className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
               >
                 <FaGithub className="text-xl" />Git Repo
               </Link>
 
               <a
-                href="/projects" // Replace with your GitHub repo link
+                href="/projects" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-700 transition border-2 border-white"
               >
