@@ -18,7 +18,7 @@ const Page = () => {
           <div>
             <h1 className="md:text-5xl text-4xl font-bold text-orange-700 mb-10">About Me 🧑‍💻 </h1>
 
-            <p className="md:text-5xl text-lg pl-4 mb-3 text-gray-500 leading-relaxed">
+            <p className=" text-lg pl-4 mb-3 text-gray-500 leading-relaxed">
               Hi, I&rsquo;m <span className="font-extrabold text-2xl text-orange-700">Dhiraj Jaiswal</span> 👋
             </p>
 
