@@ -2,14 +2,19 @@
   <img src="public/portfolio.png" alt="Portfolio Banner" width="1000"/>
 </p>
 
+<p align="center">
+  <a href="https://www.dhirajportfolio.online/">
+    <img src="https://img.shields.io/badge/🌐%20Visit%20My%20Portfolio-orange?style=for-the-badge&logo=vercel" />
+  </a>
+</p>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0.0-blue" />
   <img src="https://img.shields.io/badge/platform-Web-lightgrey" />
   <img src="https://img.shields.io/badge/framework-Next.js-black?logo=next.js" />
-<img src="https://img.shields.io/badge/framework-TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/framework-TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white" />
   <img src="https://img.shields.io/badge/language-JavaScript-yellow" />
-  <img src="https://img.shields.io/badge/component-FramerImage-0055FF?logo=framer&logoColor=white" />
   <img src="https://img.shields.io/badge/library-FramerMotion-0055FF?logo=framer&logoColor=white" />
   <img src="https://img.shields.io/badge/deploy-Vercel-black?logo=vercel" />
 </p>
@@ -66,9 +71,9 @@ Deployed using **Vercel** for seamless integration with GitHub.
 ┣ 📂 **app**  
 ┃ ┣ 📜 **layout.js** # Root layout  
 ┃ ┣ 📜 **page.js** # Homepage  
-┃ ┗ 📂 **components** # Reusable UI components  
-┃ ┗ 📂 **about**  
-┃ ┗ 📂 **contact**  
+┃ ┣ 📂 **components** # Reusable UI components  
+┃ ┣ 📂 **about**  
+┃ ┣ 📂 **contact**  
 ┃ ┗ 📂 **projects**  
 ┣ 📂 **public** # Static assets (images, icons, etc.)  
 ┣ 📜 package.json # Dependencies & scripts  
