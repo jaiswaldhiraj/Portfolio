@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <>
 
-      <section className="max-w-4xl mx-auto  md:mt-20 mt-10 mb-56 px-6 py-20">
+      <section className="max-w-4xl mx-auto  md:mt-12 mt-8 mb-56 px-6 py-20">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -41,7 +41,7 @@ const Page = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="md:text-5xl text-xl  font-bold text-orange-600 mt-14 mb-5">Skills 🛠</h2>
+            <h2 className="md:text-4xl text-xl  font-bold text-orange-600 mt-14 mb-5">Skills 🛠</h2>
             <ul className="list-disc pl-5 list-inside mt-2 text-gray-500">
               <li>
                 <span
@@ -70,7 +70,7 @@ const Page = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="md:text-5xl text-xl  font-bold text-orange-600 mt-14 mb-5">Soft Skills 💡 </h2>
+            <h2 className="md:text-4xl text-xl  font-bold text-orange-600 mt-14 mb-5">Soft Skills 💡 </h2>
             <ul className="list-disc pl-5 list-inside mt-2 text-gray-500">
               <li>Teamwork & Collaboration</li>
               <li>Quick Learner & Adaptability</li>
@@ -90,7 +90,7 @@ const Page = () => {
           viewport={{ once: true }}
         >
           <div>
-            <h2 className="md:text-5xl text-xl font-bold text-orange-600 mt-14 mb-5">Education 🎓</h2>
+            <h2 className="md:text-4xl text-xl font-bold text-orange-600 mt-14 mb-5">Education 🎓</h2>
 
             <p className="m-5 mt-2 pl-5 text-gray-500">
 
@@ -111,6 +111,17 @@ const Page = () => {
               Secondary School Certificate <span className="font-bold">(SSC)</span><br />
               St.Augusthi High School (2019 &#x2013; 2020)<br />
               <span className="font-semibold underline italic text-gray-400">Percentage 80.40</span>
+
+            </p>
+          </div>
+          <div>
+            <h2 className="md:text-4xl text-xl font-bold text-orange-600 mt-14 mb-5">Certificatons 📜</h2>
+
+            <p className="m-5 mt-2 pl-5 text-gray-500">
+
+              <h3 className="font-bold text-gray-400">PHP Programming & Web Designing </h3>
+              K. P. B. Hinduja College of Commerce (2022 &#x2013; 2023)<br />
+              <span className="font-semibold underline italic text-gray-500">Issued: 4th September 2023</span>
 
             </p>
           </div>
