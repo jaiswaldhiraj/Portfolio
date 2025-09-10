@@ -26,7 +26,7 @@ const Page = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <section className="max-w-5xl mx-auto mt-36 px-6">
+        <section className="max-w-5xl mx-auto mt-28 px-6">
 
           <div>
             <h1 className="md:text-5xl text-3xl font-bold text-orange-700 mb-4">Contact Me </h1>

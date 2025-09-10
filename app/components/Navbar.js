@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <nav className="w-auto z-50 flex items-center justify-between h-20 bg-black text-blue-50 shadow-md">
+    <nav className="w-auto z-50 flex items-center justify-between h-16 bg-black text-blue-50 shadow-md">
       {/* Logo */}
       <div id="nav_logo" className="ml-8 text-3xl font-bold">
         <Link href="/">Dhiraj&#39;s Portfolio</Link>
