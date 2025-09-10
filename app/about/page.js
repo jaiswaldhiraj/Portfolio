@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <>
 
-      <section className="max-w-4xl mx-auto  md:mt-12 mt-8 mb-56 px-6 py-20">
+      <section className="max-w-4xl mx-auto  md:mt-16 mt-9 mb-56 px-6 py-20">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
