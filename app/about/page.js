@@ -119,7 +119,7 @@ const Page = () => {
 
             <p className="m-5 mt-2 pl-5 text-gray-500">
 
-              <h3 className="font-bold text-gray-400">PHP Programming & Web Designing </h3>
+              <span className="font-bold text-gray-400">PHP Programming & Web Designing </span>
               K. P. B. Hinduja College of Commerce (2022 &#x2013; 2023)<br />
               <span className="font-semibold underline italic text-gray-500">Issued: 4th September 2023</span>
 
