@@ -5,6 +5,8 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaCopy, FaCheck } from "re
 import Image from "next/image";
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import DownloadButton from '../components/DownloadButton';
+import ActiveChips from '../components/ActiveChips';
 
 const Page = () => {
 
@@ -29,8 +31,8 @@ const Page = () => {
         <section className="max-w-5xl mx-auto mt-28 px-6">
 
           <div>
-            <h1 className="md:text-5xl text-3xl font-bold text-orange-700 mb-4">Contact Me </h1>
-            <p className=' pl-6 text-gray-500 leading-relaxed'>&#x2013; Let&#39;s Build Something Great Together</p>
+            <h1 className="md:text-5xl text-3xl font-bold text-[var(--accent)] mb-4">Contact Me </h1>
+            <p className=' pl-6 text-[var(--text-secondary)] leading-relaxed'>&#x2013; Let&#39;s Build Something Great Together</p>
           </div>
         </section>
 
@@ -38,80 +40,38 @@ const Page = () => {
 
           <div className="w-full max-w-sm flex flex-col justify-center gap-5 px-4">
 
-            <motion.a
-              href="mailto:jaiswaldhiraj928@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-4 p-3.5 rounded-xl bg-gray-800 hover:bg-gray-700 
-              transition duration-300"
-            >
-              <FaEnvelope className="text-xl " />
-              Email
-            </motion.a>
-
+            <ActiveChips href={"mailto:jaiswaldhiraj928@gmail.com"} text={"Email"} icon={"envelope"}/>
             {/* Copy button */}
             <motion.button
               onClick={handleCopy}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-4 p-3.5 rounded-xl bg-gray-800 hover:bg-gray-700 
+              className="flex items-center justify-center gap-4 p-3.5 rounded-3xl bg-[var(--accent)] text-[var(--accent-light)] hover:bg-[var(--accent-light-hover)] hover:text-[var(--accent)] 
               transition duration-300"
             >
               {copied ? <FaCheck className="text-green-400 text-xl" /> : <FaCopy />}
               {copied ? "Copied!" : "Copy Email"}
             </motion.button>
-
-            <motion.a
-              href="https://github.com/jaiswaldhiraj"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-4 p-3.5 rounded-xl bg-black transition duration-300"
-            >
-              <FaGithub className="text-xl" />
-              GitHub
-            </motion.a>
-
-            <motion.a
-              href="https://www.linkedin.com/in/jaiswaldhiraj/"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-3 p-3.5 rounded-xl bg-white font-bold text-blue-500 
-              transition duration-300"
-            >
-              <FaLinkedin className="text-xl text-blue-500" />
-              LinkedIn
-            </motion.a>
-
-            <motion.a
-              href="https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"
-              download
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-4 p-3.5 rounded-xl bg-orange-500 transition duration-300"
-            >
-              <FaFileAlt className="text-2xl" />
-              Download Resume
-            </motion.a>
+            <ActiveChips href={"https://github.com/jaiswaldhiraj"} text={"GitHub"} icon={"github"}/>
+            <ActiveChips href={"https://www.linkedin.com/in/jaiswaldhiraj/"} text={"LinkedIn"} icon={"linkedin"}/>
+            <ActiveChips href={"https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"} text={"Download Resume"} icon={"downloadpdf"}/>
 
           </div>
 
           {/* Right side - Image (hidden on small screens) */}
-          <div className=" hidden lg:flex justify-center">
+          <div
+            className="hidden lg:flex justify-center transform hover:scale-95 duration-750"
+          >
             <Image
               src="/contact-page.png"
-              alt="Contact Illustration"
+              alt="Contact illustration"
               width={400}
               height={400}
               loading="lazy"
-              className="rounded-2xl shadow-amber-500 shadow-2xl transform hover:scale-95 transition duration-750"
+              className=" rounded-4xl shadow-2xl"
+              style={{ boxShadow: "var(--shadow-image)" }}
             />
+
           </div>
         </section>
 

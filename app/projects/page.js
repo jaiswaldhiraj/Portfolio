@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaGithub, FaAndroid   } from "react-icons/fa";
+import Chips from "../components/Chips";
+import ActiveChips from "../components/ActiveChips";
 
 const Page = () => {
   
@@ -22,32 +24,34 @@ const Page = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {/* Image */}
-          <div className="md:w-1/2 flex justify-center p-6 transform hover:scale-95 transition duration-750">
+          <div className="transform hover:scale-95 duration-750">
+
             <Image
-              src="/milap-project.svg"
-              alt="Milap App"
-              width={450}
-              height={350}
+              src="/Milap.svg"
+              alt="Portfolio Website"
+              width={500}
+              height={300}
               loading="lazy"
-              className="rounded-2xl shadow-amber-500 shadow-2xl"
+              className=" rounded-4xl shadow-2xl"
+              style={{ boxShadow: "var(--shadow-image)" }}
             />
+
           </div>
 
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">
+            <h2 className="md:text-5xl text-3xl font-bold text-[var(--accent)]">
               Milap &#x2013; (Dating App)
             </h2>
-            <p className="mt-4 pl-5 lg:w-xl text-gray-400">
+            <p className="mt-4 pl-5 lg:w-xl text-[var(--text-primary)]">
               Milap is a modern dating application built for Android with real-time
               features. It allows users to create profiles, swipe through potential
               matches, and connect through an integrated chat system.
             </p>
 
-            <h3 className="md:text-3xl text-xl mt-6 text-orange-600">Key Features:</h3>
+            <h3 className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Key Features:</h3>
 
-            <ul className="mt-2 text-gray-400 list-disc list-inside pl-5 space-y-1 text-left items-center">
+            <ul className="mt-2 text-[var(--text-primary)] list-disc list-inside pl-5 space-y-1 text-left items-center">
               <li>Swipe-based card system (like/dislike) with animations</li>
               <li>User authentication via phone number (Firebase OTP)</li>
               <li>Profile setup with personal details, gender selection, and photo uploads</li>
@@ -56,56 +60,33 @@ const Page = () => {
               <li>Push notifications with Firebase Cloud Messaging</li>
             </ul>
 
-            <h3 className="md:text-3xl text-xl mt-6 text-orange-600">Tech Stack:</h3>
+            <h3 className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Tech Stack:</h3>
 
-            <p className="mt-2 pl-5 text-gray-400">
+            <p className="mt-2 pl-5 text-[var(--text-primary)]">
               Java (Android), Firebase (Realtime Database, Authentication, Cloud
               Functions, FCM), Glide, Lottie Animations
             </p>
 
-            <h3 className="md:text-3xl text-xl mt-6 text-orange-600">Role & Contribution:</h3>
+            <h3 className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Role & Contribution:</h3>
 
-            <ul className="mt-2 text-gray-400 list-inside list-disc pl-5 space-y-1 text-left">
+            <ul className="mt-2 text-[var(--text-primary)] list-inside list-disc pl-5 space-y-1 text-left">
               <li>Designed and developed the complete Android app from scratch</li>
               <li>Implemented swipe card animations and profile matching logic</li>
               <li>Integrated Firebase backend for authentication, storage, and messaging</li>
               <li>Built a real-time notification and chat system</li>
             </ul>
 
-            {/* Buttons */}
-            <div className="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
+            {/* Chips */}
 
-              <div className="flex justify-center items-center p-1 rounded-xl bg-white">
-                <Image src="/java.svg" alt="Java" width={120} height={20} />
-              </div>
+            <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
-              <div className="flex justify-center items-center p-1 rounded-xl bg-white">
-                <Image src="/firebase.svg" alt="Firebase" width={120} height={20} />
-              </div>
-
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/jaiswaldhiraj/Milap-Repo-Public"
-                className="flex items-center gap-2 p-2 px-2 rounded-xl bg-cyan-950 text-white font-medium shadow-md 
-                hover:bg-cyan-900 transition border-2 border-white"
-              >
-                <FaGithub className="text-xl" />
-                GitHub Repository
-              </Link>
-
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/jaiswaldhiraj/Milap-Repo-Public/releases/download/v1.0.0/Milap.apk"
-                className="flex items-center gap-2 p-2 px-2 rounded-xl bg-green-500 text-white font-medium shadow-md 
-                hover:bg-green-700 transition border-2 border-white"
-              >
-                <FaAndroid   className="text-xl" />
-                Download Milap Apk
-              </Link>
+              <Chips text="java" icon="java" />
+              <Chips text="firebase" icon="firebase" />
+              <ActiveChips href="https://github.com/jaiswaldhiraj/Milap-Repo-Public" text="git repo" icon="github" />
+              <ActiveChips href="https://github.com/jaiswaldhiraj/Milap-Repo-Public" text="Download Milap Apk" icon="android" />
 
             </div>
+
           </div>
         </motion.div>
 
@@ -125,31 +106,34 @@ const Page = () => {
           viewport={{ once: true }}
         >
           {/* Image */}
-          <div className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750"
+          <div
+            className="transform hover:scale-95  duration-750"
           >
             <Image
               src="/portfolio.png"
               alt="Portfolio Website"
-              width={600}
-              height={400}
+              width={500}
+              height={250}
               loading="lazy"
-              className="rounded-2xl shadow-amber-500 shadow-2xl"
+              className=" rounded-4xl shadow-2xl"
+              style={{ boxShadow: "var(--shadow-image)" }}
             />
+
           </div>
 
           {/* Text */}
           <div className="w-full md:w-1/2 text-center md:text-left">
 
-            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">Personal Portfolio Website</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-[var(--accent)]">Portfolio Website</h2>
 
-            <p className="mt-4 pl-5 text-gray-400 ">
+            <p className="mt-4 pl-5 text-[var(--text-primary)] ">
               My personal portfolio built with Next.js and Tailwind CSS,
               showcasing projects and skills.
             </p>
 
-            <p className="md:text-3xl text-xl mt-6 text-orange-600">Key Features:</p>
+            <p className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Key Features:</p>
 
-            <ol className="mt-2 pl-5 text-gray-400 list-disc list-inside text-left">
+            <ol className="mt-2 pl-5 text-[var(--text-primary)] list-disc list-inside text-left">
               <li>Built with Next.js and styled with Tailwind CSS</li>
               <li>Smooth animations using Framer Motion and Lottie</li>
               <li>Responsive navbar with mobile menu</li>
@@ -157,49 +141,26 @@ const Page = () => {
               <li>Contact page with social links (GitHub, LinkedIn, Gmail)</li>
             </ol>
 
-            <p className="md:text-3xl text-xl mt-6 text-orange-600">Tech Stack:</p>
+            <p className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Tech Stack:</p>
 
-            <p className="mt-2  text-gray-400 pl-5">Next.js, React, Tailwind CSS, Framer Motion, Vercel (deployment)</p>
+            <p className="mt-2  text-[var(--text-primary)] pl-5">Next.js, React, Tailwind CSS, Framer Motion, Vercel (deployment)</p>
 
-            <p className="md:text-3xl text-xl mt-6 text-orange-600">Role & Contribution:</p>
+            <p className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Role & Contribution:</p>
 
-            <ul className="mt-2 pl-5 text-gray-400 list-disc list-inside text-left">
+            <ul className="mt-2 pl-5 text-[var(--text-primary)] list-disc list-inside text-left">
               <li>Designed UI/UX and implemented responsive layout</li>
               <li>Added interactive animations for modern look</li>
               <li>Structured content for recruiters: About, Projects, Contact</li>
             </ul>
 
-            <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+          <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
-              <div className=" flex justify-center items-center p-4 rounded-xl bg-white">
-                <Image
-                  src="/nextjs.svg"
-                  alt="Portfolio Website"
-                  width={120}
-                  height={30}
-                />
-              </div>
-
-              <div className=" flex justify-center items-center p-4 rounded-xl bg-white ">
-                <Image
-                  src="/tailwindcss.svg"
-                  alt="Portfolio Website"
-                  width={120}
-                  height={30}
-                />
-              </div>
-
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/jaiswaldhiraj/Portfolio"
-                className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md 
-                hover:bg-cyan-900 transition border-2 border-white"
-              >
-                <FaGithub className="text-xl" />GitHub Repository
-              </Link>
+              <Chips text="NextJS" icon="nextjs" />
+              <Chips text="tailwindcss" icon="tailwind" />
+              <ActiveChips href="https://github.com/jaiswaldhiraj/Portfolio" text="git repo" icon="github" />
 
             </div>
+  
           </div>
         </motion.div>
       </section>

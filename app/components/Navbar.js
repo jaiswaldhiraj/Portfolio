@@ -1,92 +1,98 @@
-"use client"
+"use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import NavLink from "./NavLink";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
-  const handleClose = () => setOpen(false);
+  // Close menu if clicking outside dropdown
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target) &&
+        buttonRef.current && !buttonRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Close menu when switching to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // To prevent scroll when the dropdown is open
+  useEffect(() => {
+    if (open) {
+      document.documentElement.classList.add("overflow-hidden", "h-screen");
+    } else {
+      document.documentElement.classList.remove("overflow-hidden", "h-screen");
+    }
+  }, [open]);
 
   return (
-    <nav className="w-auto z-50 flex items-center justify-between h-16 bg-black text-blue-50 shadow-md">
-      {/* Logo */}
-      <div id="nav_logo" className="ml-8 text-3xl font-bold ">
-        <Link href="/">Dhiraj&#39;s Portfolio</Link>
-      </div>
+    <>
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between md:h-16 h-14
+                      bg-white/30 backdrop-blur-md shadow-md border-b border-white/20 px-8">
+        {/* Logo */}
+        <div className="md:text-3xl text-2xl font-bold">
+          <Link href="/">Dhiraj&#39;s Portfolio</Link>
+        </div>
 
-      {/* Links */}
-      <div id="nav_links" className="text-2xl">
-        <button
-          className="text-white md:hidden mr-6"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
-
-        <ul
-          className={`absolute top-16 right-0 bg-black w-40 md:w-auto text-white text-xl 
-          transition-all duration-500 ease-in-out overflow-hidden z-50
-          ${open ? "max-h-[300px] opacity-100 p-4" : "max-h-0 opacity-0"}
-          md:static md:flex md:space-x-6 md:opacity-100 md:max-h-none md:p-0 md:mr-12 md:gap-8`}
-        >
-          <li className="m-2" onClick={handleClose}>
-            <Link href="/"
-              className={`
-              relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
-              after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
-              ${pathname === "/" ? "text-orange-500 after:w-full" : "text-white"}
-            `}
-            >
-              Home
-            </Link>
-          </li>
-
-          <li className="m-2" onClick={handleClose}>
-            <Link
-              href="/about"
-              className={`
-              relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
-              after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
-              ${pathname === "/about" ? "text-orange-500 after:w-full" : "text-white"}
-            `}
-            >
-              About me
-            </Link>
-          </li>
-
-          <li className="m-2" onClick={handleClose}>
-            <Link
-              href="/projects"
-              className={`
-              relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
-              after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
-              ${pathname === "/projects" ? "text-orange-500 after:w-full" : "text-white"}
-            `}
-            >
-              Projects
-            </Link>
-          </li>
-
-          <li className="m-2" onClick={handleClose}>
-            <Link
-              href="/contact"
-              className={`
-              relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 
-              after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
-              ${pathname === "/contact" ? "text-orange-500 after:w-full" : "text-white"}
-            `}
-            >
-              Contact
-            </Link>
-          </li>
-
+        {/* Desktop Links */}
+        <ul className="hidden md:flex gap-8 text-xl">
+          <li><NavLink href="/" label="Home" pathname={pathname} setOpen={setOpen} /></li>
+          <li><NavLink href="/about" label="About" pathname={pathname} setOpen={setOpen} /></li>
+          <li><NavLink href="/projects" label="Projects" pathname={pathname} setOpen={setOpen} /></li>
+          <li><NavLink href="/contact" label="Contact" pathname={pathname} setOpen={setOpen} /></li>
         </ul>
-      </div>
-    </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="text-black md:hidden text-2xl relative z-50"
+          onClick={() => setOpen((prev) => !prev)} // toggle open/close
+          aria-label="Toggle menu"
+          ref={buttonRef}
+        >
+          {open ? "✕" : "☰"}
+        </button>
+      </nav>
+
+      {/* Mobile Dropdown + Blur */}
+      {open && (
+        <div className="fixed inset-0 z-40">
+          {/* Background Blur */}
+          <div className="absolute inset-0 backdrop-blur-md bg-white/30"></div>
+
+          {/* Dropdown Menu (only this has the ref) */}
+          <ul
+            ref={menuRef}
+            className="absolute top-12 pt-6 right-0 w-36 text-black text-lg rounded-md 
+                       bg-white shadow-md p-4 space-y-4 animate-fadeIn"
+          >
+            <li><NavLink href="/" label="Home" pathname={pathname} setOpen={setOpen} /></li>
+            <li><NavLink href="/about" label="About" pathname={pathname} setOpen={setOpen} /></li>
+            <li><NavLink href="/projects" label="Projects" pathname={pathname} setOpen={setOpen} /></li>
+            <li><NavLink href="/contact" label="Contact" pathname={pathname} setOpen={setOpen} /></li>
+          </ul>
+        </div>
+      )}
+    </>
   );
 };
 

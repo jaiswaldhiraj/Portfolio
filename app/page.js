@@ -1,13 +1,17 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Typed from "typed.js";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
+import DownloadButton from "./components/DownloadButton";
+import Chips from "./components/Chips";
+import ActiveChips from "./components/ActiveChips";
+
 
 export default function Home() {
+
+
   const typedRef = useRef(null);
 
   useEffect(() => {
@@ -37,7 +41,7 @@ export default function Home() {
       {/* ===== Intro Section ===== */}
       <section
         id="firstsection"
-        className="m-10 mt-32 flex flex-col md:flex-row justify-center items-center gap-12"
+        className="m-10 mt-32 flex flex-col md:flex-row justify-center items-center gap-12 md:pl-4"
       >
 
         {/* Intro Text Section */}
@@ -49,29 +53,24 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-lg text-gray-400">Hello, I Am</div>
+          <div className="text-lg text-[var(--text-secondary)]">Hello, I Am</div>
 
-          <div className="md:text-5xl text-4xl font-extrabold text-orange-700">
+          <div className="md:text-5xl text-4xl font-extrabold text-[var(--accent)]">
             Dhiraj Jaiswal
           </div>
 
           {/* Typed JS here */}
-          <div className="mt-2 text-2xl font-medium">
+          <div className="mt-2 text-2xl font-medium text-[var(--text-primary)]">
             <span ref={typedRef}></span>
           </div>
 
           {/* Download Resume */}
-          <motion.a
+
+          <DownloadButton
             href="https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            download
-            className="inline-block mt-6 px-6 py-3 bg-orange-600 text-xl text-white rounded-lg font-semibold hover:bg-orange-700 transition duration-500"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Download Resume
-          </motion.a>
+            text="Download Resume"
+            icon="downloadpdf"
+          />
 
         </motion.div>
 
@@ -98,19 +97,16 @@ export default function Home() {
 
 
       {/* Divider */}
-      <div className="border-t border-gray-300 my-16 w-6/7 mx-auto"></div>
+      {/* <div className="border-t bg-gray-200 my-16 w-6/7 mx-auto"></div> */}
 
       {/* Project Heading */}
-      <h1 className="md:text-5xl text-4xl font-bold text-orange-700 md:ml-40 ml-8 ">
+      <h1 className="md:text-5xl text-3xl font-bold text-[var(--accent)] md:ml-40 ml-8 ">
         My Projects
       </h1>
 
 
-
-
-
       {/* ===== Projects Section ===== */}
-      <section id="projects" className="m-10 mt-22 mb-56 flex flex-col justify-center items-center gap-12">
+      <section id="projects" className="m-10 md:mt-22 mt-10 mb-56 flex flex-col justify-center items-center gap-12">
         {/* Project 1 - Milap */}
         <motion.div
           className="flex flex-col md:flex-row items-center gap-12"
@@ -119,70 +115,35 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {/* Image */}
-          <div className="md:w-1/2 rounded-2xl shadow-amber-500 shadow-2xl relative flex justify-center items-center p-6 overflow-hidden transform hover:scale-95 transition duration-750">
-            {/* Background image with transparency */}
-            <div className="absolute inset-0 bg-[url('/milap-bg.png')] bg-cover bg-center opacity-95"></div>
+          <div className="transform hover:scale-95 duration-750">
 
-            {/* Foreground content */}
             <Image
-              src="/milap.svg"
-              alt="Milap App"
-              width={450}
-              height={350}
+              src="/Milap.svg"
+              alt="Portfolio Website"
+              width={500}
+              height={300}
               loading="lazy"
-              className="relative z-10 "
+              className=" rounded-4xl shadow-2xl"
+              style={{ boxShadow: "var(--shadow-image)" }}
             />
-          </div>
 
+          </div>
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">Milap &#x2013; (Dating App)</h2>
-            <p className="mt-4 text-gray-600">
+            <h2 className="md:text-5xl text-3xl font-bold text-[var(--highlight)]">Milap &#x2013; (Dating App)</h2>
+            <p className="mt-4 text-[var(--text-primary)]">
               A modern dating app with swipe cards, real-time chat, and
               Firebase-powered matchmaking.
             </p>
-            <p className="mt-2 text-gray-400 text-l">
+            <p className="mt-2 text-[var(--text-secondary)] text-l">
               Technologies used &#x2013;
             </p>
-            <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
 
+            <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
-              <div className=" flex justify-center items-center p-1 rounded-xl bg-white">
-                <Image
-                  src="/java.svg"
-                  alt="Portfolio Website"
-                  width={120}
-                  height={20}
-                  loading="lazy"
-                />
-              </div>
-              <div className=" flex justify-center items-center p-1 rounded-xl bg-white">
-                <Image
-                  src="/firebase.svg"
-                  alt="Portfolio Website"
-                  width={120}
-                  height={20}
-                  loading="lazy"
-                />
-              </div>
-
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/jaiswaldhiraj/Milap-Repo-Public"
-                className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
-              >
-                <FaGithub className="text-xl" />Git Repo
-              </Link>
-
-              <a
-                href="/projects"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-700 transition border-2 border-white"
-              >
-                Read More ➤
-              </a>
+              <Chips text="java" icon="java" />
+              <Chips text="firebase" icon="firebase" />
+              <ActiveChips href="https://github.com/jaiswaldhiraj/Milap-Repo-Public" text="git repo" icon="github" />
 
             </div>
           </div>
@@ -199,15 +160,16 @@ export default function Home() {
 
           {/* Portfolio Image */}
           <div
-            className="md:w-1/2 rounded-2xl shadow-lg transform hover:scale-95 transition duration-750"
+            className="transform hover:scale-95 duration-750"
           >
             <Image
               src="/portfolio.png"
               alt="Portfolio Website"
-              width={600}
-              height={400}
+              width={500}
+              height={250}
               loading="lazy"
-              className=" rounded-2xl shadow-amber-500 shadow-2xl"
+              className=" rounded-4xl shadow-2xl"
+              style={{ boxShadow: "var(--shadow-image)" }}
             />
 
           </div>
@@ -216,55 +178,20 @@ export default function Home() {
 
           <div className="w-full md:w-1/2 text-center md:text-left">
 
-            <h2 className="md:text-5xl text-3xl font-bold text-orange-700">Portfolio Website</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-[var(--highlight)]">Portfolio Website</h2>
 
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-[var(--text-primary)]">
               My personal portfolio built with Next.js and Tailwind CSS,
               showcasing projects and skills.
             </p>
 
-            <p className="mt-2 text-gray-400 text-l">Technologies used &#x2013;</p>
+            <p className="mt-2 text-[var(--text-secondary)] text-l">Technologies used &#x2013;</p>
 
-            <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+            <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
-              <div className=" flex justify-center items-center p-4 rounded-xl bg-white">
-                <Image
-                  src="/nextjs.svg"
-                  alt="Portfolio Website"
-                  width={120}
-                  height={30}
-                  loading="lazy"
-                />
-              </div>
-
-              <div className=" flex justify-center items-center p-4 rounded-xl bg-white ">
-                <Image
-                  src="/tailwindcss.svg"
-                  alt="Portfolio Website"
-                  width={120}
-                  height={30}
-                  loading="lazy"
-                />
-              </div>
-
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/jaiswaldhiraj/Portfolio"
-                className="flex items-center gap-2 p-3 rounded-xl bg-cyan-950 text-white font-medium shadow-md hover:bg-cyan-900 transition border-2 border-white"
-              >
-                <FaGithub className="text-xl" />
-                Git Repo
-              </Link>
-
-              <a
-                href="/projects"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-orange-600 text-white font-medium shadow-md hover:bg-orange-500 
-                transition border-2 border-white"
-              >
-                Read More ➤
-              </a>
+              <Chips text="NextJS" icon="nextjs" />
+              <Chips text="tailwindcss" icon="tailwind" />
+              <ActiveChips href="https://github.com/jaiswaldhiraj/Portfolio" text="git repo" icon="github" />
 
             </div>
           </div>
