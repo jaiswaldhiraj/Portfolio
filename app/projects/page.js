@@ -27,7 +27,7 @@ const Page = () => {
           <div className="transform hover:scale-95 duration-750">
 
             <Image
-              src="/Milap.svg"
+              src="/milap.svg"
               alt="Portfolio Website"
               width={500}
               height={300}
