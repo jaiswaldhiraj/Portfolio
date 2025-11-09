@@ -157,8 +157,8 @@ const Page = () => {
           <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
               <Chips text="NextJS" icon="nextjs" />
-              <Chips text="TailwindCSS" icon="tailwind" />
               <Chips text="React" icon="react" />
+              <Chips text="TailwindCSS" icon="tailwind" />
               <Chips text="Vercel" icon="vercel" />
               <ActiveChips href="https://github.com/jaiswaldhiraj/Portfolio" text="git repo" icon="github" />
 

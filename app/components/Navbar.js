@@ -83,7 +83,7 @@ const Navbar = () => {
           <ul
             ref={menuRef}
             className="absolute top-12 pt-6 right-0 w-36 text-black text-lg rounded-md 
-                       bg-white shadow-md p-4 space-y-4 animate-fadeIn"
+                       bg-[var(--background)] shadow-md p-4 space-y-4 animate-fadeIn"
           >
             <li><NavLink href="/" label="Home" pathname={pathname} setOpen={setOpen} /></li>
             <li><NavLink href="/about" label="About" pathname={pathname} setOpen={setOpen} /></li>
