@@ -80,9 +80,10 @@ const Page = () => {
 
             <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
-              <Chips text="java" icon="java" />
-              <Chips text="firebase" icon="firebase" />
-              <ActiveChips href="https://github.com/jaiswaldhiraj/Milap-Repo-Public" text="git repo" icon="github" />
+              <Chips text="Java" icon="java" />
+              <Chips text="Firebase" icon="firebase" />
+              <Chips text="Firebase RTDB" icon="rtdb" />
+              <ActiveChips href="https://github.com/jaiswaldhiraj/Milap-Repo-Public" text="Git Repo" icon="github" />
               <ActiveChips href="https://github.com/jaiswaldhiraj/Milap-Repo-Public" text="Download Milap Apk" icon="android" />
 
             </div>
@@ -110,7 +111,7 @@ const Page = () => {
             className="transform hover:scale-95  duration-750"
           >
             <Image
-              src="/portfolio.png"
+              src="/portfolio.jpg"
               alt="Portfolio Website"
               width={500}
               height={250}
@@ -156,7 +157,9 @@ const Page = () => {
           <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
               <Chips text="NextJS" icon="nextjs" />
-              <Chips text="tailwindcss" icon="tailwind" />
+              <Chips text="TailwindCSS" icon="tailwind" />
+              <Chips text="React" icon="react" />
+              <Chips text="Vercel" icon="vercel" />
               <ActiveChips href="https://github.com/jaiswaldhiraj/Portfolio" text="git repo" icon="github" />
 
             </div>

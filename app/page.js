@@ -141,9 +141,9 @@ export default function Home() {
 
             <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
-              <Chips text="java" icon="java" />
-              <Chips text="firebase" icon="firebase" />
-              <ActiveChips href="https://github.com/jaiswaldhiraj/Milap-Repo-Public" text="git repo" icon="github" />
+              <Chips text="Java" icon="java" />
+              <Chips text="Firebase" icon="firebase" />
+              <ActiveChips href="https://github.com/jaiswaldhiraj/Milap-Repo-Public" text="Git Repo" icon="github" />
 
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function Home() {
             className="transform hover:scale-95 duration-750"
           >
             <Image
-              src="/portfolio.png"
+              src="/portfolio.jpg"
               alt="Portfolio Website"
               width={500}
               height={250}
@@ -190,8 +190,8 @@ export default function Home() {
             <div className="mt-2 flex flex-wrap gap-1 justify-center md:justify-start">
 
               <Chips text="NextJS" icon="nextjs" />
-              <Chips text="tailwindcss" icon="tailwind" />
-              <ActiveChips href="https://github.com/jaiswaldhiraj/Portfolio" text="git repo" icon="github" />
+              <Chips text="TailwindCSS" icon="tailwind" />
+              <ActiveChips href="https://github.com/jaiswaldhiraj/Portfolio" text="Git Repo" icon="github" />
 
             </div>
           </div>
