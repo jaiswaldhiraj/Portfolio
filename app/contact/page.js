@@ -58,7 +58,7 @@ const Page = () => {
 
           </div>
 
-          {/* Right side - Image (hidden on small screens) */}
+          {/* Right side - Image (hidden on small screens)
           <div
             className="hidden lg:flex justify-center transform hover:scale-95 duration-750"
           >
@@ -72,7 +72,7 @@ const Page = () => {
               style={{ boxShadow: "var(--shadow-image)" }}
             />
 
-          </div>
+          </div> */}
         </section>
 
       </motion.div>
