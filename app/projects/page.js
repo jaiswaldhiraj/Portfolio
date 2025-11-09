@@ -93,7 +93,7 @@ const Page = () => {
 
 
         {/* Divider */}
-        <div className="border-t border-gray-300 my-12 w-6/7 mx-auto"></div>
+        {/* <div className="border-t border-gray-300 my-12 w-6/7 mx-auto"></div> */}
 
 
 
