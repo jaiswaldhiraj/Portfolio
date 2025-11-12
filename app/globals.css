@@ -28,7 +28,7 @@ html, body {
   --highlight: #0061f1;
   --highlight-light: #5499ff;
 
-  --shadow-card: 0 8px 20px rgb(119, 223, 255);
-  --shadow-image: 0 8px 20px rgb(0, 32, 48);
+  --shadow-card: 0 10px 32px rgb(48, 103, 147,1);
+  --shadow-image: 0 10px 32px rgb(0, 32, 48,1);
 
 }
