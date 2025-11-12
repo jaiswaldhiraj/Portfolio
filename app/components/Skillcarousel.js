@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import OnlyIcon from "./OnlyIcon";
 import { CardChips } from "./CardChips";
 import { ProgressBar } from "./ProgressBar";
-import { DATA, categories } from "../data/skillsData";
+import { DATA } from "../data/skillsData";
+
+const categories = Object.keys(DATA);
 
 export default function SkillsCarousel() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
