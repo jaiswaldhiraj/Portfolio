@@ -17,13 +17,16 @@ html, body {
 
 :root {
   --background: #f1fdff;
+  --background-dark: #e0f8fd;
   --text-primary: #1a1a1a;
   --text-secondary: #676767;
   --accent: #0058b5;
   --accent-dark: #003e90;
   --accent-light: #e8f0ff;
   --accent-light-hover: #ccdcfc;
+  --accent-hover: #d5e2fc;
   --highlight: #0061f1;
+  --highlight-light: #5499ff;
 
   --shadow-card: 0 8px 20px rgb(119, 223, 255);
   --shadow-image: 0 8px 20px rgb(0, 32, 48);

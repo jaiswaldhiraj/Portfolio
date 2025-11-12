@@ -50,7 +50,7 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between md:h-16 h-14
                       bg-white/30 backdrop-blur-md shadow-md border-b border-white/20 px-8">
         {/* Logo */}
-        <div className="md:text-3xl text-2xl font-bold">
+        <div className="md:text-3xl text-2xl font-bold text-[var(--accent)]">
           <Link href="/">Dhiraj&#39;s Portfolio</Link>
         </div>
 
@@ -82,7 +82,7 @@ const Navbar = () => {
           {/* Dropdown Menu (only this has the ref) */}
           <ul
             ref={menuRef}
-            className="absolute top-12 pt-6 right-0 w-36 text-black text-lg rounded-md 
+            className="absolute top-12 pt-6 right-0 w-36 h-[100%] text-black text-lg rounded-md 
                        bg-[var(--background)] shadow-md p-4 space-y-4 animate-fadeIn"
           >
             <li><NavLink href="/" label="Home" pathname={pathname} setOpen={setOpen} /></li>
