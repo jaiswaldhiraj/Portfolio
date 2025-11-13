@@ -6,7 +6,7 @@ import FooterLink from "./FooterLink"
 
 const Footer = () =>{
   return (
-    <footer className="bg-[var(--background-dark)] text-gray-300 border-t mt-10">
+    <footer className="bg-[var(--background)] text-gray-300 border-t">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
 
         {/* Left Section */}

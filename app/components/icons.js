@@ -1,6 +1,6 @@
 // components/icons.js
-import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, } from "react-icons/fa";
-import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiToolsFill, RiTailwindCssLine   } from "react-icons/ri";
+import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, FaPython } from "react-icons/fa";
+import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiToolsFill, RiTailwindCssLine, RiJavascriptFill    } from "react-icons/ri";
 import { LiaJava } from "react-icons/lia";
 import { IoIosArrowForward } from "react-icons/io";
 import { TbBrandVercelFilled, TbDeviceDesktopAnalytics, TbFileTypeXml,TbBrandMysql   } from "react-icons/tb";
@@ -9,6 +9,7 @@ import { MdDisplaySettings } from "react-icons/md";
 import { FiDatabase } from "react-icons/fi";
 import { LuCodeXml } from "react-icons/lu";
 import { SiMongodb, SiPostman, SiAndroidstudio } from "react-icons/si";
+import { PiFileCppBold } from "react-icons/pi";
 
 
 export const icons = {
@@ -41,5 +42,9 @@ export const icons = {
   postman:SiPostman ,
   androidstudio:SiAndroidstudio ,
   mysql:TbBrandMysql  ,
+  python:FaPython ,
+  javascript:RiJavascriptFill  ,
+  cpp:PiFileCppBold ,
+
 
 };

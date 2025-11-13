@@ -6,6 +6,7 @@ import Typed from "typed.js";
 import { motion } from "framer-motion";
 import DownloadButton from "./components/DownloadButton";
 import SkillsCarousel from "./components/Skillcarousel";
+import { TechChips } from "./components/TechChips";
 // import SkillsSection from "./components/Skillsection";
 
 
@@ -40,8 +41,7 @@ export default function Home() {
     <>
       {/* ===== Intro Section ===== */}
       <section
-        id="firstsection"
-        className="m-10 mt-32 mb-20 md:mt-40 flex flex-col md:flex-row justify-center items-center gap-12 md:pl-4"
+        className=" mt-32 md:mt-40 flex flex-col md:flex-row justify-center items-center gap-12 md:pl-4"
       >
 
         {/* Intro Text Section */}
@@ -92,6 +92,20 @@ export default function Home() {
 
         </motion.div>
 
+      </section>
+
+      <div className=" pl-16 md:pl-52 p-3 text-sm font-bold text-[var(--text-secondary)]">Tech Stack</div>
+      <section
+        className="pl-10 md:pl-52 mb-20 flex flex-wrap items-start"
+      >
+        <TechChips text={"Java"} icon={"java"} />
+        <TechChips text={"Python"} icon={"python"} />
+        <TechChips text={"JavaScript"} icon={"javascript"} />
+        <TechChips text={"C++"} icon={"cpp"} />
+        <TechChips text={"MySQL"} icon={"Database"} />
+        <TechChips text={"Firebase"} icon={"firebase"} />
+        <TechChips text={"React"} icon={"react"} />
+        <TechChips text={"TailwindCSS"} icon={"tailwind"} />
       </section>
 
 
