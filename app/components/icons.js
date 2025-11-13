@@ -1,14 +1,14 @@
 // components/icons.js
-import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma,  } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, } from "react-icons/fa";
 import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiToolsFill, RiTailwindCssLine   } from "react-icons/ri";
 import { LiaJava } from "react-icons/lia";
 import { IoIosArrowForward } from "react-icons/io";
-import { TbBrandVercelFilled, TbDeviceDesktopAnalytics, TbFileTypeXml  } from "react-icons/tb";
+import { TbBrandVercelFilled, TbDeviceDesktopAnalytics, TbFileTypeXml,TbBrandMysql   } from "react-icons/tb";
 import { DiFirebase } from "react-icons/di";
 import { MdDisplaySettings } from "react-icons/md";
 import { FiDatabase } from "react-icons/fi";
 import { LuCodeXml } from "react-icons/lu";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiPostman, SiAndroidstudio } from "react-icons/si";
 
 
 export const icons = {
@@ -38,5 +38,8 @@ export const icons = {
   figma: FaFigma ,
   uiux:TbDeviceDesktopAnalytics ,
   tailwindcss:RiTailwindCssLine ,
+  postman:SiPostman ,
+  androidstudio:SiAndroidstudio ,
+  mysql:TbBrandMysql  ,
 
 };

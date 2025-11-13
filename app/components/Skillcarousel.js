@@ -30,13 +30,13 @@ export default function SkillsCarousel() {
       {/* Carousel area */}
       <div className="relative">
         {/* Cards container*/}
-        <div className="flex flex-wrap justify-center items-start gap-6 pb-4 px-8">
+        <div className="flex flex-wrap justify-center items-start gap-6 pb-4 px-10">
           {items.map((skill, idx) => {
             return (
               <div
                 key={skill.id}
                 data-index={idx}
-                className={`snap-center w-full sm:w-[320px] md:w-[320px] md:h-80 p-6 rounded-2xl border border-[var(--highlight)] bg-white shadow-md hover:shadow-[var(--shadow-card)] hover:scale-[1] transition-all duration-300`}
+                className={`snap-center w-full sm:w-[320px] md:w-[320px] md:h-96 p-6 rounded-2xl border border-[var(--highlight)] bg-white shadow-md hover:shadow-[var(--shadow-card)] hover:scale-[1] transition-all duration-300`}
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
