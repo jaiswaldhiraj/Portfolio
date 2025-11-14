@@ -82,7 +82,7 @@ export default function Services({ services = SERVICES }) {
 
                         <div className="mt-4 flex items-center justify-between">
                           <div className="text-sm text-[#315b9a] font-medium">From</div>
-                          <div className="text-sm text-brandBlue font-semibold">Let's talk</div>
+                          <div className="text-sm text-brandBlue font-semibold">Let&#39;s talk</div>
                         </div>
                       </div>
 
