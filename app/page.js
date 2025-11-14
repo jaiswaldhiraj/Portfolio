@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 import DownloadButton from "./components/DownloadButton";
 import SkillsCarousel from "./components/Skillcarousel";
 import { TechChips } from "./components/TechChips";
-// import SkillsSection from "./components/Skillsection";
+// import { ExtraCards } from "./components/ExtraCards";
+// import Services from "./components/Services";
 
 
 export default function Home() {
@@ -93,10 +94,9 @@ export default function Home() {
         </motion.div>
 
       </section>
-
-      <div className=" pl-16 md:pl-52 p-3 text-sm font-bold text-[var(--text-secondary)]">Tech Stack</div>
+      {/* <div className=" pl-16 md:pl-52 p-3 text-sm font-bold text-[var(--text-secondary)]">Tech Stack</div> */}
       <section
-        className="pl-10 md:pl-52 mb-20 flex flex-wrap items-start"
+        className="pl-10 md:pl-52 mb-20 mt-10 flex flex-wrap items-start"
       >
         <TechChips text={"Java"} icon={"java"} />
         <TechChips text={"Python"} icon={"python"} />
@@ -109,16 +109,20 @@ export default function Home() {
       </section>
 
 
-
-      {/* Divider */}
-      {/* <div className="border-t bg-gray-200 my-16 w-6/7 mx-auto"></div> */}
-
-
       <section className="pt-20 pb-24 bg-[var(--background-dark)]">
         <SkillsCarousel />
       </section>
 
-      {/* <SkillsSection /> */}
+      {/* <div className="flex flex-wrap gap-20 justify-center items-center m-36">
+        <ExtraCards no={"5+"} text={"Languages"} />
+        <ExtraCards no={"3+"} text={"Frameworks"} />
+        <ExtraCards no={"2+"} text={"Projects"} />
+        <ExtraCards no={"2+"} text={"Tools"} />
+      </div> */}
+
+      {/* <div className="pt-10 pb-10 bg-[var(--background-dark)]">
+        <Services />
+      </div> */}
 
 
     </>

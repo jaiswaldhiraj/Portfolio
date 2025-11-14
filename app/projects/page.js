@@ -33,7 +33,7 @@ const Page = () => {
               height={300}
               loading="lazy"
               className=" rounded-4xl shadow-2xl"
-              style={{ boxShadow: "var(--shadow-image)" }}
+              style={{ boxShadow: "var(--shadow-card)" }}
             />
 
           </div>
@@ -117,7 +117,7 @@ const Page = () => {
               height={250}
               loading="lazy"
               className=" rounded-4xl shadow-2xl"
-              style={{ boxShadow: "var(--shadow-image)" }}
+              style={{ boxShadow: "var(--shadow-card)" }}
             />
 
           </div>

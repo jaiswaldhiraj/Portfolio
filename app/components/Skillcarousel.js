@@ -19,7 +19,7 @@ export default function SkillsCarousel() {
         <h1 className="md:text-5xl text-center text-2xl font-extrabold text-[var(--accent)] ">
           My Skills
         </h1>
-        <h2 className="mt-7 pl-10 pr-10 text-center text-l text-[var(--text-primary)] mx-auto">
+        <h2 className="mt-7 pl-10 pr-10 text-center text-l text-[var(--text-secondary)] mx-auto">
           Technologies I use and how confident I am with each — presented in the same layout as my projects.
         </h2>
       </div>
