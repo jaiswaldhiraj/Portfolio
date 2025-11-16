@@ -1,34 +1,46 @@
 export const SERVICES = [
   {
-    id: "frontend",
-    title: "Frontend Development",
-    short: "Modern, responsive UI with React & Next.js",
+    id: "fullstack",
+    title: "Full-Stack Application Development",
+    short:
+      "I build complete end-to-end applications—from responsive frontends to robust backend logic. I focus on clean UI/UX, scalable architecture, and seamless integration between all layers.",
     details: [
-      "Reusable components & design systems",
-      "SEO-friendly pages & routing",
-      "Animations & accessibility",
-    ],
-    icon: "💻",
-    accent: "from-[#3ea0ff] to-[#2b6df6]",
-  },
-  {
-    id: "backend",
-    title: "Backend APIs",
-    short: "Secure REST APIs with Node.js & Express",
-    details: [
-      "Authentication & JWT",
+      "Frontend development with modern UI frameworks",
+      "Backend logic, APIs, and server-side workflows",
       "Database integration (MongoDB / MySQL)",
-      "Rate limiting & validation",
+      "Realtime data handling using Firebase or custom APIs",
+      "End-to-end testing and deployment",
     ],
-    icon: "⚙️",
-    accent: "from-[#12b99a] to-[#00b4d8]",
+    icon: "Backend",
   },
+
   {
     id: "android",
-    title: "Android UI Design",
-    short: "XML layouts, ConstraintLayout & adaptive UI",
-    details: ["Adaptive layouts", "Emulators & testing", "Performance & profiling"],
-    icon: "📱",
-    accent: "from-[#f59e0b] to-[#f97316]",
+    title: "Android Application Development",
+    short:
+      "I design and develop Android applications with clean layouts, smooth interactions, and efficient backend logic that matches user expectations.",
+    details: [
+      "Pixel-perfect UI/UX layout design using XML",
+      "Device emulation, testing & debugging",
+      "Realtime data syncing with Firebase",
+      "API integration and backend connectivity",
+      "Optimized performance for different device sizes",
+    ],
+    icon: "android",
+  },
+
+  {
+    id: "frontend",
+    title: "Website Development (React & Next.js)",
+    short:
+      "I create fast, modern, responsive websites using React and NextJS. My focus is clean UI, reusable components, and SEO-friendly architecture.",
+    details: [
+      "Responsive page layouts & reusable components",
+      "Next.js routing, SEO optimization & metadata",
+      "Animations using Framer Motion & CSS",
+      "Cross-device compatibility & accessibility",
+      "Design systems for consistent UI/UX",
+    ],
+    icon: "Frontend",
   },
 ];

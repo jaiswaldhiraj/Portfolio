@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 import DownloadButton from "./components/DownloadButton";
 import SkillsCarousel from "./components/Skillcarousel";
 import { TechChips } from "./components/TechChips";
-// import { ExtraCards } from "./components/ExtraCards";
-// import Services from "./components/Services";
+import { ExtraCards } from "./components/ExtraCards";
+import Services from "./components/Services";
 
 
 export default function Home() {
@@ -118,9 +118,9 @@ export default function Home() {
         <ExtraCards no={"3+"} text={"Frameworks"} />
         <ExtraCards no={"2+"} text={"Projects"} />
         <ExtraCards no={"2+"} text={"Tools"} />
-      </div> */}
+      </div>
 
-      {/* <div className="pt-10 pb-10 bg-[var(--background-dark)]">
+      <div className="pt-10 pb-10 bg-[var(--background-dark)]">
         <Services />
       </div> */}
 
