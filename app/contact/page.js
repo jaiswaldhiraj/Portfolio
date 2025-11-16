@@ -2,8 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
-import ActiveChips from '../components/ActiveChips';
-import { CopyButton } from '../components/CopyButton';
+import { ContactButtons,CopyButton } from '../components/ContactButtons';
 
 const Page = () => {
   return (
@@ -25,15 +24,15 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="contact" className="mb-64 mt-10 flex flex-col md:flex-row justify-center items-center gap-56">
+        <section id="contact" className="mb-64 mt-10 flex flex-col md:flex-row justify-center items-center">
 
-          <div className="w-full max-w-sm flex flex-col justify-center gap-5 px-4">
+          <div className="w-full max-w-sm flex flex-col justify-center gap-2 md:gap-5 px-4">
 
-            <ActiveChips href={"mailto:jaiswaldhiraj928@gmail.com"} text={"Email"} icon={"envelope"} />
+            <ContactButtons href={"mailto:jaiswaldhiraj928@gmail.com"} text={"Email"} icon={"envelope"} />
             <CopyButton />
-            <ActiveChips href={"https://github.com/jaiswaldhiraj"} text={"GitHub"} icon={"github"} />
-            <ActiveChips href={"https://www.linkedin.com/in/jaiswaldhiraj/"} text={"LinkedIn"} icon={"linkedin"} />
-            <ActiveChips href={"https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"} text={"Download Resume"} icon={"downloadpdf"} />
+            <ContactButtons href={"https://github.com/jaiswaldhiraj"} text={"GitHub"} icon={"github"} />
+            <ContactButtons href={"https://www.linkedin.com/in/jaiswaldhiraj/"} text={"LinkedIn"} icon={"linkedin"} />
+            <ContactButtons href={"https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"} text={"Download Resume"} icon={"downloadpdf"} />
 
           </div>
         </section>

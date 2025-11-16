@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
+
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 /* Hide scrollbar for Chrome, Safari, Edge */
 ::-webkit-scrollbar {
@@ -11,10 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
 
 :root {
   --background: #f6feff;
