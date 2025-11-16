@@ -1,5 +1,5 @@
 // components/icons.js
-import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, FaPython } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, FaPython, FaCopy, FaCheck} from "react-icons/fa";
 import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiToolsFill, RiTailwindCssLine, RiJavascriptFill    } from "react-icons/ri";
 import { LiaJava } from "react-icons/lia";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
@@ -46,6 +46,8 @@ export const icons = {
   python:FaPython ,
   javascript:RiJavascriptFill  ,
   cpp:PiFileCppBold ,
+  copy:FaCopy ,
+  check:FaCheck ,
 
 
 };
