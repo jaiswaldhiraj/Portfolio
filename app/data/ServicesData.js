@@ -8,7 +8,7 @@ export const SERVICES = [
       "Frontend development with modern UI frameworks",
       "Backend logic, APIs, and server-side workflows",
       "Database integration (MongoDB / MySQL)",
-      "Realtime data handling using Firebase or custom APIs",
+      "Realtime data handling using Firebase",
       "End-to-end testing and deployment",
     ],
     icon: "Backend",

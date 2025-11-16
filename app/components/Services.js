@@ -20,11 +20,12 @@ export default function Services({ services = SERVICES }) {
   }
 
   return (
-    <section className="py-20">
+    <section>
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-[var(--accent)]">Services</h2>
-          <p className="text-[var(--text-secondary)] mt-2">What I offer — tap or hover each card to see details.</p>
+          <h2 className="md:text-5xl text-center text-3xl font-extrabold text-[var(--accent)]">My Services</h2>
+          <p className="mt-5 md:mt-7 pl-10 pr-10 text-center text-l text-[var(--text-secondary)] mx-auto">From websites to full applications, I design and build
+solutions that are fast, responsive, and reliable.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -46,7 +47,7 @@ export default function Services({ services = SERVICES }) {
                 >
                   {/* 3D scene */}
                   <div
-                    className={`relative w-full h-80 [perspective:1000px]`}
+                    className={`relative w-full h-96 [perspective:1000px]`}
                   // ensure children aren't clipped
                   >
                     {/* card wrapper that flips */}

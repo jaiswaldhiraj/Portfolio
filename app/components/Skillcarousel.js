@@ -16,7 +16,7 @@ export default function SkillsCarousel() {
   return (
     <section>
       <div className="mb-8">
-        <h1 className="md:text-5xl text-center text-2xl font-extrabold text-[var(--accent)] ">
+        <h1 className="md:text-5xl text-center text-3xl font-extrabold text-[var(--accent)] ">
           My Skills
         </h1>
         <h2 className="mt-7 pl-10 pr-10 text-center text-l text-[var(--text-secondary)] mx-auto">

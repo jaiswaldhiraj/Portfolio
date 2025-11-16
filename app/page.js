@@ -109,20 +109,37 @@ export default function Home() {
       </section>
 
 
-      <section className="pt-20 pb-24 bg-[var(--background-dark)]">
+      {/* My Skills */}
+      <section className="pt-16 pb-28 bg-[var(--background-dark)]">
         <SkillsCarousel />
       </section>
 
-      {/* <div className="flex flex-wrap gap-20 justify-center items-center m-36">
+
+
+      {/* At a Glance */}
+      <div className="pt-16">
+        <h1 className="md:text-5xl text-center text-3xl font-extrabold text-[var(--accent)] ">
+          At a Glance
+        </h1>
+        <h2 className="mt-5 mb-10 pl-10 pr-10 text-center text-l text-[var(--text-secondary)] mx-auto">
+          A quick breakdown of the technologies I use and the work I&apos;ve completed so far.
+        </h2>
+      </div>
+
+      <div className="pb-32 flex flex-wrap gap-20 justify-center items-center ml-36 mr-36">
         <ExtraCards no={"5+"} text={"Languages"} />
         <ExtraCards no={"3+"} text={"Frameworks"} />
         <ExtraCards no={"2+"} text={"Projects"} />
         <ExtraCards no={"2+"} text={"Tools"} />
       </div>
 
-      <div className="pt-10 pb-10 bg-[var(--background-dark)]">
+
+
+
+      {/* My Services */}
+      <div className="pt-16 pb-32 bg-[var(--background-dark)]">
         <Services />
-      </div> */}
+      </div>
 
 
     </>

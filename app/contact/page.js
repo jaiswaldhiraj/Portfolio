@@ -28,11 +28,18 @@ const Page = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <section className="max-w-5xl mx-auto mt-28 px-6">
+        <section className="max-w-5xl mx-auto mt-24 px-6">
 
-          <div>
+          {/* <div>
             <h1 className="md:text-5xl text-3xl font-bold text-[var(--accent)] mb-4">Contact Me </h1>
-            <p className=' pl-6 text-[var(--text-secondary)] leading-relaxed'>&#x2013; Let&#39;s Build Something Great Together</p>
+            <p className='text-[var(--text-secondary)] leading-relaxed'>Let&#39;s Build Something Great Together</p>
+          </div> */}
+          <div className="pt-16">
+            <h1 className="md:text-5xl text-center text-3xl font-extrabold text-[var(--accent)] ">
+              Contact Me
+            </h1>
+            <h2 className="mt-5 mb-10 pl-10 pr-10 text-center text-l text-[var(--text-secondary)] mx-auto">
+              Let&#39;s Build Something Great Together        </h2>
           </div>
         </section>
 
@@ -40,7 +47,7 @@ const Page = () => {
 
           <div className="w-full max-w-sm flex flex-col justify-center gap-5 px-4">
 
-            <ActiveChips href={"mailto:jaiswaldhiraj928@gmail.com"} text={"Email"} icon={"envelope"}/>
+            <ActiveChips href={"mailto:jaiswaldhiraj928@gmail.com"} text={"Email"} icon={"envelope"} />
             {/* Copy button */}
             <motion.button
               onClick={handleCopy}
@@ -52,9 +59,9 @@ const Page = () => {
               {copied ? <FaCheck className="text-green-400 text-xl" /> : <FaCopy />}
               {copied ? "Copied!" : "Copy Email"}
             </motion.button>
-            <ActiveChips href={"https://github.com/jaiswaldhiraj"} text={"GitHub"} icon={"github"}/>
-            <ActiveChips href={"https://www.linkedin.com/in/jaiswaldhiraj/"} text={"LinkedIn"} icon={"linkedin"}/>
-            <ActiveChips href={"https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"} text={"Download Resume"} icon={"downloadpdf"}/>
+            <ActiveChips href={"https://github.com/jaiswaldhiraj"} text={"GitHub"} icon={"github"} />
+            <ActiveChips href={"https://www.linkedin.com/in/jaiswaldhiraj/"} text={"LinkedIn"} icon={"linkedin"} />
+            <ActiveChips href={"https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"} text={"Download Resume"} icon={"downloadpdf"} />
 
           </div>
 
