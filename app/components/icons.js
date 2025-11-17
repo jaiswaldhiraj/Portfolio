@@ -1,6 +1,6 @@
 // components/icons.js
-import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, FaPython, FaCopy, FaCheck} from "react-icons/fa";
-import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiToolsFill, RiTailwindCssLine, RiJavascriptFill    } from "react-icons/ri";
+import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, FaPython, FaCopy, FaCheck, FaBookReader } from "react-icons/fa";
+import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiToolsFill, RiTailwindCssLine, RiJavascriptFill, RiUserSettingsFill     } from "react-icons/ri";
 import { LiaJava } from "react-icons/lia";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { TbBrandVercelFilled, TbDeviceDesktopAnalytics, TbFileTypeXml,TbBrandMysql   } from "react-icons/tb";
@@ -8,9 +8,8 @@ import { DiFirebase } from "react-icons/di";
 import { MdDisplaySettings } from "react-icons/md";
 import { FiDatabase } from "react-icons/fi";
 import { LuCodeXml } from "react-icons/lu";
-import { SiMongodb, SiPostman, SiAndroidstudio } from "react-icons/si";
-import { PiFileCppBold } from "react-icons/pi";
-
+import { SiMongodb, SiPostman, SiAndroidstudio, SiPhp  } from "react-icons/si";
+import { PiFileCppBold, PiCertificateFill  } from "react-icons/pi";
 
 export const icons = {
   download: FaDownload,
@@ -48,6 +47,10 @@ export const icons = {
   cpp:PiFileCppBold ,
   copy:FaCopy ,
   check:FaCheck ,
+  skills:RiUserSettingsFill  ,
+  education:FaBookReader ,
+  certificates:PiCertificateFill ,
+  php:SiPhp ,
 
 
 };

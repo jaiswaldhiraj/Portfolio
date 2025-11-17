@@ -96,7 +96,7 @@ export default function Home() {
       </section>
       {/* <div className=" pl-16 md:pl-52 p-3 text-sm font-bold text-[var(--text-secondary)]">Tech Stack</div> */}
       <section
-        className="pl-10 md:pl-52 mb-20 mt-10 flex flex-wrap items-start"
+        className="pl-10 md:pl-52 mb-20 gap-3 mt-10 flex flex-wrap items-start"
       >
         <TechChips text={"Java"} icon={"java"} />
         <TechChips text={"Python"} icon={"python"} />

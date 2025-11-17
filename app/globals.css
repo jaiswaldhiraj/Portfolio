@@ -24,6 +24,7 @@ html {
 :root {
   --background: #f6feff;
   --background-dark: #e0f8fd;
+  --card-bg: #effdff;
   --text-primary: #1a1a1a;
   --text-secondary: #676767;
   --accent: #0058b5;

@@ -1,135 +1,101 @@
-"use client"
+"use client";
 
-import React from 'react'
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { Certificates } from "../components/Certificates";
+import { Educations } from "../components/Educations";
+import { Skills } from "../components/Skills";
+import ActiveChips from "../components/ActiveChips";
 
 const Page = () => {
   return (
-    <>
-
-      <section className="max-w-4xl mx-auto  md:mt-16 mt-9 mb-56 px-6 py-20">
+    <section className="max-w-4xl mx-auto md:mt-32 mt-28 mb-56 px-6">
+      {/* ABOUT HERO */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+      >
+        {/* Avatar + Info */}
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="md:col-span-1 flex flex-col items-center text-center"
         >
-
-          <div>
-            <h1 className="md:text-5xl text-4xl font-bold text-[var(--accent)] mb-10">About Me 🧑‍💻 </h1>
-
-            <p className=" text-lg pl-4 mb-3 text-[var(--text-secondary)] leading-relaxed">
-              Hi, I&rsquo;m <span className="font-extrabold text-2xl text-[var(--accent)]">Dhiraj Jaiswal</span> 👋
-            </p>
-
-            <p className='text-lg pl-6 text-[var(--text-primary)] leading-relaxed'>
-              I am a passionate web and app developer with experience in building
-              modern, responsive applications. I enjoy working with technologies
-              like <span className="font-medium">Next.js, Tailwind CSS, Firebase, Java ( XML )</span> and love creating
-              intuitive and user-friendly experiences.
-            </p>
-
+          <div className="w-36 h-36 rounded-2xl overflow-hidden shadow-lg ring-1 ring-black/5 mb-4">
+            <Image
+              src="/avatar.png"
+              alt="Dhiraj Jaiswal"
+              className="w-full h-full object-cover"
+            />
           </div>
 
+          <h3 className="text-xl font-extrabold text-[var(--accent)]">
+            Dhiraj Jaiswal
+          </h3>
+          <p className="text-sm text-[var(--text-secondary)] mt-1">
+            Web & App Developer • BCA
+          </p>
+
+          <p className="mt-3 text-sm text-[var(--text-primary)] flex items-center gap-2">
+            <FaMapMarkerAlt className="text-xs" /> Mumbai, India
+          </p>
         </motion.div>
 
-        {/* Skills Section */}
-        <div>
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="md:text-4xl text-xl  font-bold text-[var(--highlight)] mt-14 mb-5">Skills 🛠</h2>
-            <ul className="list-disc pl-5 list-inside mt-2 text-[var(--text-primary)]">
-              <li>
-                <span
-                  className='font-semibold text-[var(--text-primary)]'>Programming: </span>
-                C, C++, Java, Python</li>
-              <li>
-                <span
-                  className='font-semibold text-[var(--text-primary)]'>App Development: </span>
-                Java, Java XML, Firebase</li>
-              <li>
-                <span
-                  className='font-semibold text-[var(--text-primary)]'>Web Development: </span>
-                HTML, CSS, JavaScript, PHP, MySQL, MongoDB</li>
-              <li>
-                <span
-                  className='font-semibold text-[var(--text-primary)]'>Frameworks: </span>
-                Tailwind CSS, React JS, Next.js</li>
-              <li>Data Structures & Algorithms <span className="font-bold">(DSA)</span> (C++)</li>
-            </ul>
-
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="md:text-4xl text-xl  font-bold text-[var(--highlight)] mt-14 mb-5">Soft Skills 💡 </h2>
-            <ul className="list-disc pl-5 list-inside mt-2 text-[var(--text-primary)]">
-              <li>Teamwork & Collaboration</li>
-              <li>Quick Learner & Adaptability</li>
-              <li>Creative Problem Solving</li>
-              <li>Leadership & Time Management</li>
-              <li>UI/UX Ideation</li>
-            </ul>
-          </motion.div>
-        </div>
-
-        {/* Education section */}
-
+        {/* About Text */}
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, x: -30 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="md:col-span-2"
         >
-          <div>
-            <h2 className="md:text-4xl text-xl font-bold text-[var(--highlight)] mt-14 mb-5">Education 🎓</h2>
+          {/* <h1 className="md:text-5xl text-4xl font-bold text-[var(--accent)] mb-4">
+            About Me 🧑‍💻
+          </h1> */}
 
-            <p className="m-5 mt-2 pl-5 text-[var(--text-primary)]">
+          <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-3">
+            Hi, I’m{" "}
+            <span className="font-extrabold text-2xl text-[var(--accent)]">
+              Dhiraj Jaiswal
+            </span>
+            — I build modern web & mobile apps with a focus on clean UX and
+            smooth performance.
+          </p>
 
-              Bachelor of Computer Applications <span className="font-bold">(BCA)</span><br />
-              K. P. B. Hinduja College of Commerce (2022 &#x2013; 2025)<br />
-              <span className="font-semibold underline italic text-[var(--text-primary)]">CGPA - 7.47</span>
+          <p className="text-[var(--text-primary)] leading-relaxed">
+            I enjoy working with technologies like{" "}
+            <span className="font-semibold">
+              Next.js, Tailwind CSS, Firebase, Java (XML)
+            </span>{" "}
+            and I love converting ideas into functional and beautiful products.
+          </p>
 
-            </p>
-            <p className="m-5 mt-2 pl-5  text-[var(--text-primary)]">
-
-              Higher Secondary Certificate <span className="font-bold">(HSC)</span><br />
-              Kapol High School & Jr. College (2021 &#x2013; 2022)<br />
-              <span className="font-semibold underline italic text-[var(--text-primary)]">Percentage 80</span>
-
-            </p>
-            <p className="m-5 mt-2 pl-5  text-[var(--text-primary)]">
-
-              Secondary School Certificate <span className="font-bold">(SSC)</span><br />
-              St.Augusthi High School (2019 &#x2013; 2020)<br />
-              <span className="font-semibold underline italic text-[var(--text-primary)]">Percentage 80.40</span>
-
-            </p>
-          </div>
-          <div>
-            <h2 className="md:text-4xl text-xl font-bold text-[var(--highlight)] mt-14 mb-5">Certificatons 📜</h2>
-
-            <p className="m-5 mt-2 pl-5 text-[var(--text-primary)]">
-
-              <span className="font-semibold text-[var(--text-primary)]">PHP Programming & Web Designing </span>
-              K. P. B. Hinduja College of Commerce (2022 &#x2013; 2023)<br />
-              <span className="font-semibold underline italic text-[var(--text-primary)]">Issued: 4th September 2023</span>
-
-            </p>
+          {/* CTA buttons */}
+          <div className="mt-6 flex flex-wrap justify-center">
+            <ActiveChips href="https://github.com/jaiswaldhiraj/Portfolio/releases/download/v1.0/Dhiraj.Jaiswal.Resume.pdf"
+              text="Download Resume"
+              icon="downloadpdf" />
           </div>
         </motion.div>
-      </section>
 
-    </>
+      </motion.div>
+
+      {/* SKILLS SECTION */}
+      <Skills />
+
+      {/* EDUCATION TIMELINE */}
+      <Educations />
+
+      {/* CERTIFICATIONS */}
+      <Certificates />
+    </section>
   );
-}
+};
 
-export default Page
+export default Page;
