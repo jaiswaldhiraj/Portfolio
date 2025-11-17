@@ -18,14 +18,14 @@ export const CardBackFace = ({ s }) => {
         </div>
         <h3 className="text-xl font-semibold text-[--text-primary] mb-2">{s.title}</h3>
         <p className="text-xs text-[var(--text-secondary)] mb-2">What I do:</p>
-        <ul className="list-disc ml-5 text-sm text-[var(--accent-dark)] md:space-y-1">
+        <ul className="list-disc ml-5 text-sm text-[var(--accent-dark)] space-y-1">
           {s.details.map((d) => (
             <li key={d}>{d}</li>
           ))}
         </ul>
       </div>
 
-      <div className="md:mt-2 mt-1 flex items-center justify-between">
+      <div className="mt-2 flex items-center justify-between">
         <Hireme />
         <div className="flex items-center justify-between">
           <span className='bg-[var(--accent)] text-2xl text-[var(--accent-light)] rounded-[100%] p-3'>

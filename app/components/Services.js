@@ -47,7 +47,7 @@ solutions that are fast, responsive, and reliable.</p>
                 >
                   {/* 3D scene */}
                   <div
-                    className={`relative w-full h-96 [perspective:1000px]`}
+                    className={`relative w-full h-[28rem] md:h-[25rem] [perspective:1000px]`}
                   // ensure children aren't clipped
                   >
                     {/* card wrapper that flips */}
