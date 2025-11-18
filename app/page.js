@@ -94,7 +94,6 @@ export default function Home() {
         </motion.div>
 
       </section>
-      {/* <div className=" pl-16 md:pl-52 p-3 text-sm font-bold text-[var(--text-secondary)]">Tech Stack</div> */}
       <motion.div
         id="imagesection"
         initial={{ opacity: 0, x: 20 }}
@@ -120,7 +119,6 @@ export default function Home() {
       </section>
 
 
-
       {/* At a Glance */}
       <div className="pt-16">
         <h1 className="md:text-5xl text-center text-3xl font-extrabold text-[var(--accent)] ">
@@ -137,8 +135,6 @@ export default function Home() {
         <ExtraCards no={"2+"} text={"Projects"} />
         <ExtraCards no={"2+"} text={"Tools"} />
       </div>
-
-
 
 
       {/* My Services */}

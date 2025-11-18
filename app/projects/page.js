@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { FaGithub, FaAndroid   } from "react-icons/fa";
 import Chips from "../components/Chips";
 import ActiveChips from "../components/ActiveChips";
 
@@ -13,15 +11,14 @@ const Page = () => {
     <>
       <section
         id="projects"
-        className="m-10 lg:mt-36 mt-20 mb-56 flex flex-col justify-center items-center gap-24"
-      >
+        className="m-10 lg:mt-36 mt-20 mb-56 flex flex-col justify-center items-center gap-24">
 
         {/* Project 1 - Milap */}
         <motion.div
-          className="flex flex-col lg:flex-row-reverse items-center gap-12"
-          initial={{ opacity: 0, x: -100 }}
+          className="flex flex-col lg:flex-row-reverse pr-28 items-center gap-12"
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.2 }}
           viewport={{ once: true }}
         >
           <div className="transform hover:scale-95 duration-750">
@@ -62,7 +59,7 @@ const Page = () => {
 
             <h3 className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Tech Stack:</h3>
 
-            <p className="mt-2 pl-5 text-[var(--text-primary)]">
+            <p className="mt-2 md:pl-5 text-[var(--text-primary)]">
               Java (Android), Firebase (Realtime Database, Authentication, Cloud
               Functions, FCM), Glide, Lottie Animations
             </p>
@@ -91,19 +88,12 @@ const Page = () => {
           </div>
         </motion.div>
 
-
-
-        {/* Divider */}
-        {/* <div className="border-t border-gray-300 my-12 w-6/7 mx-auto"></div> */}
-
-
-
         {/* Project 2 - Portfolio Website */}
         <motion.div
-          className="flex flex-col lg:flex-row items-center gap-12"
-          initial={{ opacity: 0, x: 100 }}
+          className="flex flex-col pl-28 lg:flex-row items-center gap-12"
+          initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.2 }}
           viewport={{ once: true }}
         >
           {/* Image */}
@@ -144,7 +134,7 @@ const Page = () => {
 
             <p className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Tech Stack:</p>
 
-            <p className="mt-2  text-[var(--text-primary)] pl-5">Next.js, React, Tailwind CSS, Framer Motion, Vercel (deployment)</p>
+            <p className="mt-2  text-[var(--text-primary)] md:pl-5">Next.js, React, Tailwind CSS, Framer Motion, Vercel (deployment)</p>
 
             <p className="md:text-3xl text-xl mt-6 font-bold text-[var(--highlight)]">Role & Contribution:</p>
 
