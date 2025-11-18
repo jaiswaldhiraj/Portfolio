@@ -3,11 +3,11 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import { Certificates } from "../components/Certificates";
 import { Educations } from "../components/Educations";
 import { Skills } from "../components/Skills";
 import ActiveChips from "../components/ActiveChips";
+import OnlyIcon from "../components/OnlyIcon";
 
 const Page = () => {
   return (
@@ -27,13 +27,17 @@ const Page = () => {
           }}
           className="md:col-span-1 flex flex-col items-center text-center"
         >
-          <div className="w-36 h-36 rounded-2xl overflow-hidden shadow-lg ring-1 ring-black/5 mb-4">
+          <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white mb-4">
             <Image
               src="/avatar.png"
               alt="Dhiraj Jaiswal"
+              loading="lazy"
+              width={80}
+              height={80}
               className="w-full h-full object-cover"
             />
           </div>
+
 
           <h3 className="text-xl font-extrabold text-[var(--accent)]">
             Dhiraj Jaiswal
@@ -43,7 +47,8 @@ const Page = () => {
           </p>
 
           <p className="mt-3 text-sm text-[var(--text-primary)] flex items-center gap-2">
-            <FaMapMarkerAlt className="text-xs" /> Mumbai, India
+            <span className="text-xs" > <OnlyIcon icon={"mapmarker"}/></span>Mumbai, India
+            
           </p>
         </motion.div>
 
@@ -55,12 +60,8 @@ const Page = () => {
           }}
           className="md:col-span-2"
         >
-          {/* <h1 className="md:text-5xl text-4xl font-bold text-[var(--accent)] mb-4">
-            About Me 🧑‍💻
-          </h1> */}
-
           <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-3">
-            Hi, I’m{" "}
+            Hi, I&#39;m{" "}
             <span className="font-extrabold text-2xl text-[var(--accent)]">
               Dhiraj Jaiswal
             </span>

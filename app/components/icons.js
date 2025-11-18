@@ -1,5 +1,5 @@
 // components/icons.js
-import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, FaPython, FaCopy, FaCheck, FaBookReader } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaAndroid, FaReact, FaChevronCircleRight, FaChevronCircleLeft, FaUserShield, FaFigma, FaPython, FaCopy, FaCheck, FaBookReader, FaMapMarkerAlt } from "react-icons/fa";
 import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiToolsFill, RiTailwindCssLine, RiJavascriptFill, RiUserSettingsFill     } from "react-icons/ri";
 import { LiaJava } from "react-icons/lia";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
@@ -51,6 +51,7 @@ export const icons = {
   education:FaBookReader ,
   certificates:PiCertificateFill ,
   php:SiPhp ,
+  mapmarker:FaMapMarkerAlt ,
 
 
 };
