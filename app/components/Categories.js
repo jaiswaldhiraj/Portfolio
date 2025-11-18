@@ -1,10 +1,16 @@
 
 import React from 'react'
 import OnlyIcon from "./OnlyIcon";
+import { motion } from 'framer-motion';
 
-export const Categories = ({categories,activeCategory,setActiveCategory}) => {
+export const Categories = ({ categories, activeCategory, setActiveCategory }) => {
     return (
-        <div className="flex items-center justify-center gap-4 m-10 mt-7">
+        <motion.div
+            id="imagesection"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex items-center justify-center gap-4 m-10 mt-7">
             {/* Loop through all categories and create one button for each */}
             {categories.map((cat) => {
                 const active = cat === activeCategory; // Check if this category is currently active
@@ -41,6 +47,6 @@ export const Categories = ({categories,activeCategory,setActiveCategory}) => {
                     </button>
                 );
             })}
-        </div>
+        </motion.div>
     )
 }

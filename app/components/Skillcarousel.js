@@ -5,6 +5,7 @@ import { CardChips } from "./CardChips";
 import { ProgressBar } from "./ProgressBar";
 import { DATA } from "../data/skillsData";
 import { Categories } from "./Categories";
+import { motion } from "framer-motion";
 
 const categories = Object.keys(DATA);
 
@@ -15,14 +16,19 @@ export default function SkillsCarousel() {
 
   return (
     <section>
-      <div className="mb-8">
+      <motion.div
+        id="imagesection"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-8">
         <h1 className="md:text-5xl text-center text-3xl font-extrabold text-[var(--accent)] ">
           My Skills
         </h1>
         <h2 className="mt-7 pl-10 pr-10 text-center text-l text-[var(--text-secondary)] mx-auto">
           Technologies I use and how confident I am with each — presented in the same layout as my projects.
         </h2>
-      </div>
+      </motion.div>
 
       {/* Categories */}
       <Categories categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />

@@ -49,9 +49,8 @@ export default function Home() {
         <motion.div
           id="textsection"
           className="w-96 text-center md:text-left"
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           <div className="text-lg text-[var(--text-secondary)]">Hello, I Am</div>
@@ -78,9 +77,8 @@ export default function Home() {
         {/* Intro Image Section */}
         <motion.div
           id="imagesection"
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
           <Image
@@ -95,7 +93,11 @@ export default function Home() {
 
       </section>
       {/* <div className=" pl-16 md:pl-52 p-3 text-sm font-bold text-[var(--text-secondary)]">Tech Stack</div> */}
-      <section
+      <motion.div
+        id="imagesection"
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         className="pl-10 md:pl-52 mb-20 gap-3 mt-10 flex flex-wrap items-start"
       >
         <TechChips text={"Java"} icon={"java"} />
@@ -106,7 +108,7 @@ export default function Home() {
         <TechChips text={"Firebase"} icon={"firebase"} />
         <TechChips text={"React"} icon={"react"} />
         <TechChips text={"TailwindCSS"} icon={"tailwind"} />
-      </section>
+      </motion.div>
 
 
       {/* My Skills */}
