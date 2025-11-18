@@ -24,6 +24,7 @@ const Page = () => {
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 },
+            transition: { duration: 0.2 },
           }}
           className="md:col-span-1 flex flex-col items-center text-center"
         >
@@ -47,8 +48,8 @@ const Page = () => {
           </p>
 
           <p className="mt-3 text-sm text-[var(--text-primary)] flex items-center gap-2">
-            <span className="text-xs" > <OnlyIcon icon={"mapmarker"}/></span>Mumbai, India
-            
+            <span className="text-xs" > <OnlyIcon icon={"mapmarker"} /></span>Mumbai, India
+
           </p>
         </motion.div>
 
@@ -57,6 +58,7 @@ const Page = () => {
           variants={{
             hidden: { opacity: 0, x: -30 },
             visible: { opacity: 1, x: 0 },
+            transition: { duration: 0.2 },
           }}
           className="md:col-span-2"
         >

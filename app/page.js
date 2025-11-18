@@ -52,6 +52,7 @@ export default function Home() {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.2 }}
         >
           <div className="text-lg text-[var(--text-secondary)]">Hello, I Am</div>
 
@@ -80,6 +81,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.2 }}
         >
           <Image
             src="/developer.png"
@@ -98,6 +100,7 @@ export default function Home() {
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
+        transition={{ duration: 0.2 }}
         className="pl-10 md:pl-52 mb-20 gap-3 mt-10 flex flex-wrap items-start"
       >
         <TechChips text={"Java"} icon={"java"} />

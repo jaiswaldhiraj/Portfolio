@@ -1,13 +1,9 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import OnlyIcon from './OnlyIcon'
 
 export const Educations = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+    <div
       className="mt-14"
     >
       <h2 className="flex gap-4 md:text-4xl text-2xl font-bold text-[var(--highlight)] mb-6">
@@ -58,6 +54,6 @@ export const Educations = () => {
           </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   )
 }
